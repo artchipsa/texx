@@ -1,0 +1,69 @@
+<svg width="48" height="60" viewBox="0 0 48 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>003-interface</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-20158 -11645)">
+<g id="003-interface">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(20158.5 11645)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(20167.5 11660)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path2_fill" transform="translate(20167.5 11682)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path3_fill" transform="translate(20187.5 11675)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path4_fill" transform="translate(20167.5 11668)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path5_fill" transform="translate(20182.5 11668)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path6_fill" transform="translate(20177.5 11668)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path7_fill" transform="translate(20172.5 11675)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path8_fill" transform="translate(20167.5 11675)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path3_fill" transform="translate(20187.5 11689)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path9_fill" transform="translate(20172.5 11689)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path10_fill" transform="translate(20167.5 11689)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path11_fill" transform="translate(20194.5 11668)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path12_fill" transform="translate(20189.5 11682)" fill="#ED1A3B"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path13_fill" transform="translate(20194.5 11682)" fill="#ED1A3B"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 32.4141 0L 0 0L 0 60L 47 60L 47 14.5859L 32.4141 0ZM 33 3.41406L 43.5859 14L 33 14L 33 3.41406ZM 2 2L 2 58L 45 58L 45 16L 31 16L 31 2L 2 2Z"/>
+<path id="path1_fill" d="M 1 2L 10 2C 10.552 2 11 1.553 11 1C 11 0.447 10.552 0 10 0L 1 0C 0.448 0 0 0.447 0 1C 0 1.553 0.448 2 1 2Z"/>
+<path id="path2_fill" d="M 18 0L 1 0C 0.448 0 0 0.447 0 1C 0 1.553 0.448 2 1 2L 18 2C 18.552 2 19 1.553 19 1C 19 0.447 18.552 0 18 0Z"/>
+<path id="path3_fill" d="M 8 0L 1 0C 0.448 0 0 0.447 0 1C 0 1.553 0.448 2 1 2L 8 2C 8.552 2 9 1.553 9 1C 9 0.447 8.552 0 8 0Z"/>
+<path id="path4_fill" d="M 1 2L 6 2C 6.552 2 7 1.553 7 1C 7 0.447 6.552 0 6 0L 1 0C 0.448 0 0 0.447 0 1C 0 1.553 0.448 2 1 2Z"/>
+<path id="path5_fill" d="M 1 2L 8 2C 8.552 2 9 1.553 9 1C 9 0.447 8.552 0 8 0L 1 0C 0.448 0 0 0.447 0 1C 0 1.553 0.448 2 1 2Z"/>
+<path id="path6_fill" d="M 0 0.9875C 0 1.2475 0.11 1.5075 0.29 1.6975C 0.48 1.8775 0.74 1.9875 1 1.9875C 1.26 1.9875 1.52 1.8775 1.71 1.6975C 1.89 1.5075 2 1.2475 2 0.9875C 2 0.7265 1.89 0.4665 1.71 0.2775C 1.34 -0.0925 0.67 -0.0925 0.29 0.2775C 0.11 0.4665 0 0.7265 0 0.9875Z"/>
+<path id="path7_fill" d="M 1 0C 0.448 0 0 0.447 0 1C 0 1.553 0.448 2 1 2L 11 2C 11.552 2 12 1.553 12 1C 12 0.447 11.552 0 11 0L 1 0Z"/>
+<path id="path8_fill" d="M 1 1.9875C 1.26 1.9875 1.52 1.8775 1.71 1.6975C 1.89 1.5075 2 1.2475 2 0.9875C 2 0.7265 1.89 0.4665 1.71 0.2775C 1.34 -0.0925 0.66 -0.0925 0.29 0.2775C 0.11 0.4665 0 0.7165 0 0.9875C 0 1.2475 0.11 1.5075 0.29 1.6975C 0.48 1.8775 0.74 1.9875 1 1.9875Z"/>
+<path id="path9_fill" d="M 11 0L 1 0C 0.448 0 0 0.447 0 1C 0 1.553 0.448 2 1 2L 11 2C 11.552 2 12 1.553 12 1C 12 0.447 11.552 0 11 0Z"/>
+<path id="path10_fill" d="M 0.29 0.276262C 0.11 0.456262 0 0.715263 0 0.986263C 0 1.25626 0.1 1.50626 0.29 1.69626C 0.48 1.87626 0.74 1.98626 1 1.98626C 1.27 1.98626 1.52 1.87626 1.71 1.69626C 1.89 1.50626 2 1.24626 2 0.986263C 2 0.715263 1.89 0.465263 1.71 0.286263C 1.34 -0.0937375 0.67 -0.0937375 0.29 0.276262Z"/>
+<path id="path11_fill" d="M 0.29 0.2775C 0.11 0.4665 0 0.7265 0 0.9875C 0 1.2475 0.11 1.5075 0.29 1.6975C 0.48 1.8775 0.74 1.9875 1 1.9875C 1.26 1.9875 1.52 1.8775 1.71 1.6975C 1.9 1.5075 2 1.2475 2 0.9875C 2 0.7265 1.9 0.4665 1.71 0.2775C 1.33 -0.0925 0.67 -0.0925 0.29 0.2775Z"/>
+<path id="path12_fill" d="M 1.71 1.6975C 1.89 1.5075 2 1.2475 2 0.9875C 2 0.7265 1.89 0.4665 1.71 0.2775C 1.33 -0.0925 0.66 -0.0925 0.29 0.2775C 0.11 0.4665 0 0.7265 0 0.9875C 0 1.2475 0.11 1.5075 0.29 1.6975C 0.48 1.8865 0.73 1.9875 1 1.9875C 1.27 1.9875 1.52 1.8775 1.71 1.6975Z"/>
+<path id="path13_fill" d="M 0.29 0.2775C 0.11 0.4665 0 0.7265 0 0.9875C 0 1.2475 0.11 1.5075 0.29 1.6975C 0.48 1.8775 0.73 1.9875 1 1.9875C 1.27 1.9875 1.52 1.8775 1.71 1.6975C 1.89 1.5075 2 1.2475 2 0.9875C 2 0.7265 1.89 0.4665 1.71 0.2775C 1.34 -0.0925 0.66 -0.0925 0.29 0.2775Z"/>
+</defs>
+</svg>

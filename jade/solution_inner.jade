@@ -1,0 +1,170 @@
+doctype
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Texx
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="css/jquery.mCustomScrollbar.min.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		.glogal-wrapper
+			include modules/header.jade
+			.assets-preload
+				include ../img/assets.svg
+			.overflow-wrapper
+				.main-content.inner
+					a(href="#").scroll-up.scroll-control
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					a(href="#").scroll-down.scroll-control
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					.navigation-bar
+						.abs-img(style="background-image: url(img/solution.jpg); display: block;")
+						.section-nav
+							.side-title Отраслевые решения
+						.page-nav
+							a.back-link(href="#")
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+								span Назад
+					.scrolled-content
+						section
+							h2 Мониторинг в сельском хозяйстве
+							p Мы обеспечиваем информацией, необходимой для эффективного управления автопарками в любой точке России и ближнего зарубежья. Мы помогаем экономить время и деньги! Содействуем процветанию и прогрессу Вашего бизнеса, позволяя добиться наиболее оптимального использования машин, механизмов и потребляемого ими топлива.
+							.table-header Доступные комплектации
+							table
+								tr
+									th Цена от 42 000 руб.
+									th
+										a.modal-handler(href="#buy_solution") Купить
+								tr
+									td ABK
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Вкл.–Выкл. световых приборов
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Голосовая связь
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Датчик оборотов ДВС
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Датчик уровня топлива Omnicomm LLS
+									td 2
+								tr
+									td Информация по местоположению, треку, пробегу
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Использование данных с CAN-шины
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Открытия–закрытия дверей
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Подключение работы отопителя
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Работа навесного оборудования
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Температура двигателя
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Терминал
+									td optim
+								tr
+									td Тревожная кнопка
+									td 
+										i.fa.fa-check(aria-hidden="true")
+								tr
+									td Идентефикация водителей
+									td нет
+							a.btn.default.modal-handler(href="#solution_consult") Получить консультацию
+				.modal-container#buy_solution
+					.modal-content
+						a(href="#").close-modal
+							img(src="../img/modal_close.svg", alt="")
+						.row.col-container
+							.col-lg-3.col-md-3.col-container
+								.slide-sidebar
+									h2 Купить решение
+									.require-text * — поля обязательные для заполнения
+									a(href="#").btn.default Отправить
+							.col-lg-9.col-md-9.col-container
+								.slide-content.flex-column
+									p.area
+									form
+										.form-group
+											input(type="text", name="", value="Мониторинг в сельском хозяйстве", placeholder="Вид решения")
+										.form-group
+											input.required(type="text", name="", placeholder="Контактное лицо *")
+										.form-group
+											input.required(type="text", name="", placeholder="Телефон *")
+										.form-group
+											input(type="text", name="", placeholder="Электронная почта")
+				.modal-container#solution_consult
+					.modal-content
+						a(href="#").close-modal
+							img(src="../img/modal_close.svg", alt="")
+						.row.col-container
+							.col-lg-3.col-md-3.col-container
+								.slide-sidebar
+									h2 Обратная связь
+									.require-text * — поля обязательные для заполнения
+									a(href="#").btn.default Отправить
+							.col-lg-9.col-md-9.col-container
+								.slide-content.flex-column
+									p.area
+									form
+										.form-group
+											input(type="text", name="", placeholder="Отдел")
+										.form-group
+											input(type="text", name="", placeholder="Наименование организации")
+										.form-group
+											input.required(type="text", name="", placeholder="Контактное лицо *")
+										.form-group
+											input.required(type="text", name="", placeholder="Телефон *")
+										.form-group
+											input(type="text", name="", placeholder="Электронная почта")
+
+
+
+
+				//- 		section
+				//- 			.end-block
+				//- 				h2 Начните свой проект с нами уже сегодня!
+				//- .feedback
+				//- 	.name Обратная связь
+				//- 	a(href="").link.next-main-link
+				//- 		svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+				//- 			use(xlink:href="#arrow-left")
+				//- 	.helper-ui-text нажмите на кнопку
+
+
+
+
+		
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="https://use.fontawesome.com/856283dff2.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/jquery.mCustomScrollbar.concat.min.js")
+		script(src="js/app.js")

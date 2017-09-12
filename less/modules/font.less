@@ -1,0 +1,9 @@
+.font(@family, @sub, @weight){
+    @font-face{
+        font-family: @family;
+        src: url('../fonts/@{sub}.otf');
+        src: url('../fonts/@{sub}.woff2') format('woff2'),
+             url('../fonts/@{sub}.woff') format('woff');
+        font-weight: @weight;
+    }
+}

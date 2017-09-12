@@ -1,0 +1,177 @@
+doctype
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Texx
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="css/jquery.mCustomScrollbar.min.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		.glogal-wrapper
+			include modules/header.jade
+			.assets-preload
+				include ../img/assets.svg
+			.overflow-wrapper
+				.main-content.inner
+					.abs-top-control
+						.navigation-bar
+							.section-nav
+								.side-title Стоимость
+							.page-nav
+								a.back-link(href="#")
+									svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+										use(xlink:href="#arrow-left")
+									span Назад
+					.abs-top-control
+						ul(role="tablist").switcher-tabs
+							li(role="presentation").active
+								a(href="#heavy" aria-controls="heavy" role="tab" data-toggle="tab") Грузовой
+							li
+								.switcher
+									span
+							li(role="presentation")
+								a(href="#light" aria-controls="light" role="tab" data-toggle="tab") Легковой
+					.tab-content
+						.tab-pane.article-wrapper.fade.in.active#heavy
+							.fullwidth
+								.car-block
+									include ../img/Fura_with_point.svg
+								.oversize-block
+									.pices-block
+										a(href="#" data-id="F_poit_1").piece Контроль местоположения качества вождения
+										a(href="#" data-id="F_poit_2").piece Контроль ремня безопасноти
+										a(href="#" data-id="F_poit_3").piece Связь с водителем
+										a(href="#" data-id="F_poit_4").piece Контроль температуры и оборотов двигателя
+										a(href="#" data-id="F_poit_5").piece Контроль расхода топлива
+										a(href="#" data-id="F_poit_6").piece Контроль температуры в кузове
+										a(href="#" data-id="F_poit_7").piece Контроль назначения водителей
+										a(href="#" data-id="F_poit_8").piece Контроль пассажтропотока
+										a(href="#" data-id="F_poit_9").piece Контроль параметров в CAN–шине
+										a(href="#" data-id="F_poit_10").piece Отправка сигнала тревоги
+										a(href="#" data-id="F_poit_11").piece Фото и видео фиксация
+										a(href="#" data-id="F_poit_12").piece Контроль заправок и сливов
+										a(href="#" data-id="F_poit_13").piece Контроль нагрузки на ось
+										a(href="#" data-id="F_poit_14").piece Контроль открытия дверей
+								.info-oversize
+									.info-block
+										.amount-calc
+											.label-text Количество автомобилей
+											.amount-block 
+												.amount-control.minus
+													span -
+												.amount 1
+												.amount-control.plus
+													span +
+										.cost-block
+											.item.big
+												.price.allcost 0 .-
+												.price-label итого
+											.item
+												.price.mount 0 .-
+												.price-label за установку
+											.item
+												.price.self 0 .-
+												.price-label за оборудование
+										.btn-block
+											a(href="#call_request" data-amount="1", data-selfcost="0", data-mountcost="0", data-allcost="0").btn.default.modal-handler Оставить заявку
+											a(href="").btn.invert Добавить расчет
+
+						.tab-pane.article-wrapper.fade#light
+							.fullwidth
+								.car-block
+									include ../img/Mers_with_point.svg
+								.oversize-block
+									.pices-block
+										a(href="#" data-id="M_poit_1").piece Контроль местоположения качества вождения
+										a(href="#" data-id="M_poit_2").piece Контроль ремня безопасноти
+										a(href="#" data-id="M_poit_3").piece Связь с водителем
+										a(href="#" data-id="M_poit_4").piece Контроль температуры и оборотов двигателя
+										a(href="#" data-id="M_poit_5").piece Контроль расхода топлива
+										a(href="#" data-id="M_poit_6").piece Контроль температуры в кузове
+										a(href="#" data-id="M_poit_7").piece Контроль назначения водителей
+										a(href="#" data-id="M_poit_8").piece Контроль пассажтропотока
+										a(href="#" data-id="M_poit_9").piece Контроль параметров в CAN–шине
+										a(href="#" data-id="M_poit_10").piece Отправка сигнала тревоги
+										a(href="#" data-id="M_poit_11").piece Фото и видео фиксация
+								.info-oversize
+									.info-block
+										.amount-calc
+											.label-text Количество автомобилей
+											.amount-block 
+												.amount-control.minus
+													span -
+												.amount 1
+												.amount-control.plus
+													span +
+										.cost-block
+											.item.big
+												.price.allcost 0 .-
+												.price-label итого
+											.item
+												.price.mount 0 .-
+												.price-label за установку
+											.item
+												.price.self 0 .-
+												.price-label за оборудование
+										.btn-block
+											a(href="#call_request" data-amount="1", data-selfcost="0", data-mountcost="0", data-allcost="0").btn.default.modal-handler Оставить заявку
+											a(href="").btn.invert Добавить расчет
+				.modal-container#call_request
+					.modal-content
+						a(href="#").close-modal
+							img(src="../img/modal_close.svg", alt="")
+						.row.col-container
+							.col-lg-3.col-md-3.col-container
+								.slide-sidebar
+									h2 Обратная связь
+									.require-text * — поля обязательные для заполнения
+									a(href="#").btn.default Отправить
+							.col-lg-9.col-md-9.col-container
+								.slide-content.flex-column
+									form.flex
+										.cost-block
+											.form-group.three
+												label(for="") Количество автомобилей
+												input#amount(type="text", name="", readonly)
+											.form-group.three
+												label(for="") Цена за установку
+												input#mountcost(type="text", name="", readonly)
+											.form-group.three
+												label(for="") Цена за оборудование
+												input#selfcost(type="text", name="", readonly)
+											.form-group
+												label Итоговая цена
+												input#allcost(type="text", name="", readonly)
+										.form-group
+											input.required(type="text", name="", placeholder="Контактное лицо *")
+										.form-group
+											input.required(type="text", name="", placeholder="Телефон *")
+										.form-group
+											input(type="text", name="", placeholder="Электронная почта")
+
+				//- 		section
+				//- 			.end-block
+				//- 				h2 Начните свой проект с нами уже сегодня!
+				//- .feedback
+				//- 	.name Обратная связь
+				//- 	a(href="").link.next-main-link
+				//- 		svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+				//- 			use(xlink:href="#arrow-left")
+				//- 	.helper-ui-text нажмите на кнопку
+
+
+
+
+		
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="https://use.fontawesome.com/856283dff2.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/jquery.mCustomScrollbar.concat.min.js")
+		script(src="js/app.js")

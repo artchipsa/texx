@@ -1,0 +1,118 @@
+doctype
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Texx
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="css/jquery.mCustomScrollbar.min.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		.glogal-wrapper
+			include modules/header.jade
+			.assets-preload
+				include ../img/assets.svg
+			.overflow-wrapper
+				include modules/search-modal.jade
+				include modules/lk-modal.jade
+				.main-content.inner.wider
+					.abs-top-control
+						ul(role="tablist").tabs
+							li(role="presentation").active
+								a(href="#stages" aria-controls="stages" role="tab" data-toggle="tab") Этапы
+							li(role="presentation")
+								a(href="#services" aria-controls="services" role="tab" data-toggle="tab") Услуги
+					.tab-content
+						.tab-pane.fade.in.active#stages
+							a(href="#").scroll-up.scroll-control
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							a(href="#").scroll-down.scroll-control
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.navigation-bar
+								.section-nav
+									.side-title
+									ul
+										li.active
+											a(href="#") Консультация
+										li
+											a(href="#") Демонстрация
+										li
+											a(href="#") Обследование объектов
+										li
+											a(href="#") Тестовая эксплуатация
+										li
+											a(href="#") Проектирование и монтаж
+								.page-nav
+									a.back-link(href="#")
+										svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+											use(xlink:href="#arrow-left")
+										span Назад
+							.scrolled-content
+								section
+									h2 Консультация
+									.dark-img
+										img(src="../img/about.jpg", alt="")
+										.overlay
+											h2 Компания создавалась как #[span профессиональный интегратор] систем GPS мониторинга
+									h3 Давайте для начала разберёмся, нужен ли вашей компании подобный контроль за работой транспорта, и какие вопросы позволит решить система ГЛОНАСС/GPS мониторинга?
+									p Мы помогаем экономить время и деньги! Содействуем процветанию и прогрессу Вашего бизнеса, позволяя добиться наиболее оптимального использования машин, механизмов и потребляемого ими топлива. Мы выявляем и тестируем все новые продукты на рынке, вместе с нашими партнёрами повышаем технологичность систем ГЛОНАСС/GPS мониторинга, чтобы предложить нашим заказчикам только надежные и современные решения. Мы стремимся быть лидерами в создании систем контроля транспорта и в будущем. Будущее создают люди, а не машины. Основа доверия клиентов компании - наша команда.
+						.tab-pane.fade#services
+							a(href="#").scroll-up.scroll-control
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							a(href="#").scroll-down.scroll-control
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.navigation-bar
+								.section-nav
+									.side-title
+									ul
+										li.active
+											a(href="#") Комплексная поддержка
+										li
+											a(href="#") Стандарты сервиса
+										li
+											a(href="#") Обучение
+								.page-nav
+									a.back-link(href="#")
+										svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+											use(xlink:href="#arrow-left")
+										span Назад
+							.scrolled-content
+								section
+									h2 Комплексная поддержка
+									.dark-img
+										img(src="../img/about.jpg", alt="")
+										.overlay
+											h2 Компания создавалась как #[span профессиональный интегратор] систем GPS мониторинга
+									h3 Давайте для начала разберёмся, нужен ли вашей компании подобный контроль за работой транспорта, и какие вопросы позволит решить система ГЛОНАСС/GPS мониторинга?
+									p Мы помогаем экономить время и деньги! Содействуем процветанию и прогрессу Вашего бизнеса, позволяя добиться наиболее оптимального использования машин, механизмов и потребляемого ими топлива. Мы выявляем и тестируем все новые продукты на рынке, вместе с нашими партнёрами повышаем технологичность систем ГЛОНАСС/GPS мониторинга, чтобы предложить нашим заказчикам только надежные и современные решения. Мы стремимся быть лидерами в создании систем контроля транспорта и в будущем. Будущее создают люди, а не машины. Основа доверия клиентов компании - наша команда.
+
+
+				//- 		section
+				//- 			.end-block
+				//- 				h2 Начните свой проект с нами уже сегодня!
+				//- .feedback
+				//- 	.name Обратная связь
+				//- 	a(href="").link.next-main-link
+				//- 		svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+				//- 			use(xlink:href="#arrow-left")
+				//- 	.helper-ui-text нажмите на кнопку
+
+
+
+
+		
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="https://use.fontawesome.com/856283dff2.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/jquery.mCustomScrollbar.concat.min.js")
+		script(src="js/app.js")

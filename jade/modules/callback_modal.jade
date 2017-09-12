@@ -1,0 +1,52 @@
+.modal-container#callback_modal
+	.modal-content
+		a(href="#").close-modal
+			img(src="../img/modal_close.svg", alt="")
+		.row.col-container
+			.col-lg-3.col-md-3.col-container
+				.slide-sidebar
+					h2 Обратная связь
+					ul(role="tablist").tabs
+							li(role="presentation").active
+								a(href="#contact_us" aria-controls="contact_us" role="tab" data-toggle="tab") Напишите нам
+							li(role="presentation")
+								a(href="#for_clients" aria-controls="for_clients" role="tab" data-toggle="tab") Для клиентов
+					.require-text * — поля обязательные для заполнения
+			.col-lg-9.col-md-9.col-container
+				.slide-content.tab-content
+					.tab-pane.fade.in.active#contact_us
+						.flex-column
+							p Уважаемые клиенты! #[br] Для оперативной связи с подразделениями нашей компании заполните, пожалуйста, форму и отправьте запрос. Наш специалист свяжется с Вами в ближайшее время.
+							form
+								.form-group
+									input.required(type="text", name="", placeholder="Контактное лицо")
+								.form-group
+									input.required(type="text", name="", placeholder="Телефон")
+								.form-group
+									input.required(type="text", name="", placeholder="Электронная почта")
+								.form-group
+									textarea(name="", placeholder="Текс вопроса")
+								.form-group
+									input.btn.default(type="submit", value="Войти")
+					.tab-pane.fade#for_clients
+						.flex-column
+							p Уважаемые клиенты! #[br] Для оперативной связи с подразделениями нашей компании заполните, пожалуйста, форму и отправьте запрос. Наш специалист свяжется с Вами в ближайшее время.
+							form
+								.form-group
+									select.custom_select
+										option(value="1") Техническая поддержка
+										option(value="2") Бухгалтерия
+										option(value="3") Отдел по работе с клиентами
+								.form-group
+									input.required(type="text", name="", placeholder="Наименование организации")
+								.form-group
+									input.required(type="text", name="", placeholder="Контактное лицо")
+								.form-group
+									input.required(type="text", name="", placeholder="Телефон")
+								.form-group
+									input.required(type="text", name="", placeholder="Электронная почта")
+								//- .form-group
+								//- 	textarea(name="", placeholder="Текст сообщения")
+								.form-group
+									input.btn.default(type="submit", value="Войти")
+

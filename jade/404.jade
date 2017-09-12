@@ -1,0 +1,36 @@
+doctype
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Texx
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		include modules/header.jade
+		.assets-preload
+			include ../img/assets.svg
+		.overflow-wrapper
+			include modules/search-modal.jade
+			include modules/lk-modal.jade
+			.fail-container
+				.fail-content
+					.row
+						.col-lg-3.col-md-3.col-sm-3
+							h2 404
+							a.btn.default(href="/") На главную
+						.col-lg-9.col-md-9.col-sm-9
+							h1 Раздела не существует или он находится в разработке
+
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="https://use.fontawesome.com/856283dff2.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/app.js")
+
+

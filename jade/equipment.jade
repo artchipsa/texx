@@ -1,0 +1,91 @@
+doctype
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Texx
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="css/jquery.mCustomScrollbar.min.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		.glogal-wrapper
+			include modules/header.jade
+			.assets-preload
+				include ../img/assets.svg
+			.overflow-wrapper
+				.main-content.inner.wider
+					a(href="#").scroll-up.scroll-control
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					a(href="#").scroll-down.scroll-control
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					.abs-top-control
+						.navigation-bar
+							.section-nav
+								.side-title Оборудование
+							.page-nav
+								a.back-link(href="#")
+									svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+										use(xlink:href="#arrow-left")
+									span Назад
+					.scrolled-content.fullwidth
+						.equipment-block
+							a(href="").item
+								img(src="../img/eq1.png", alt="")
+								span Тахографы
+							a(href="").item
+								img(src="../img/eq2.png", alt="")
+								span Датчики
+							a(href="").item
+								img(src="../img/eq3.png", alt="")
+								span Трекеры
+							a(href="").item
+								img(src="../img/eq1.png", alt="")
+								span Тахографы
+							a(href="").item
+								img(src="../img/eq2.png", alt="")
+								span Тахографы
+							a(href="").item
+								img(src="../img/eq3.png", alt="")
+								span Тахографы
+							a(href="").item
+								img(src="../img/eq1.png", alt="")
+								span Тахографы
+							a(href="").item
+								img(src="../img/eq2.png", alt="")
+								span Тахографы
+							a(href="").item
+								img(src="../img/eq3.png", alt="")
+								span Тахографы
+
+
+
+						
+
+
+				//- 		section
+				//- 			.end-block
+				//- 				h2 Начните свой проект с нами уже сегодня!
+				//- .feedback
+				//- 	.name Обратная связь
+				//- 	a(href="").link.next-main-link
+				//- 		svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+				//- 			use(xlink:href="#arrow-left")
+				//- 	.helper-ui-text нажмите на кнопку
+
+
+
+
+		
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="https://use.fontawesome.com/856283dff2.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/jquery.mCustomScrollbar.concat.min.js")
+		script(src="js/app.js")

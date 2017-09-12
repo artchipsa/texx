@@ -1,0 +1,20 @@
+<svg width="22" height="22" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 11</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-28949 428)">
+<g id="Group 11">
+<g id="Group 10">
+<g id="Path 13 Copy">
+<use xlink:href="#path0_stroke" transform="translate(28951 -426)" fill="#ED1A3B"/>
+</g>
+<g id="Path 13 Copy 2">
+<use xlink:href="#path1_stroke" transform="translate(28951 -426)" fill="#ED1A3B"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 17.4393 -1.06066L -0.567603 16.9463L 1.55372 19.0676L 19.5607 1.06066L 17.4393 -1.06066Z"/>
+<path id="path1_stroke" d="M 19.0676 16.9463L 1.06066 -1.06066L -1.06066 1.06066L 16.9463 19.0676L 19.0676 16.9463Z"/>
+</defs>
+</svg>

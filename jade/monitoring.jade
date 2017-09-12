@@ -1,0 +1,104 @@
+doctype
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Texx
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="css/jquery.mCustomScrollbar.min.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		.glogal-wrapper
+			include modules/header.jade
+			.assets-preload
+				include ../img/assets.svg
+			.overflow-wrapper
+				.main-content.inner
+					a(href="#").scroll-up.scroll-control
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					a(href="#").scroll-down.scroll-control
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					.navigation-bar
+						.section-nav
+							.top
+								.side-title Мониторинг
+								a.back-link(href="#")
+									svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+										use(xlink:href="#arrow-left")
+									span Назад
+							.bottom
+								.mobile-scroll
+									ul.mobile-scroll-container
+										li.mobile-scroll-elem.active
+											a(href="#") Возможности системы
+										li.mobile-scroll-elem
+											a(href="#") Программное обеспечение
+										li.mobile-scroll-elem
+											a(href="#") Калькулятор
+						.page-nav
+							a.back-link(href="#")
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+								span Назад
+					.scrolled-content
+						section
+							h2 Возможности cистемы
+							.three-col-block
+								a.item(href="")
+									img(src="../img/ma1.svg", alt="")
+									.small-title Онлайн контроль передвижения
+									p Контроль передвижений, параметров активности и состояния объекта в реальном времени
+								a.item(href="")
+									img(src="../img/ma2.svg", alt="")
+									.small-title Контроль топлива
+									p Предотвращение махинаций с ГСМ, обнаружение сливов и обеспечение рационального использования топлива
+								a.item(href="")
+									img(src="../img/ma3.svg", alt="")
+									.small-title Контроль прохождения маршрутов
+									p Планирование, оптимизация и контроль прохождения маршрутов
+								a.item(href="")
+									img(src="../img/ma4.svg", alt="")
+									.small-title Мониторинг активности сотрудников
+									p Оптимизация рабочего времени и повышение производительности персонала
+								a.item(href="")
+									img(src="../img/ma5.svg", alt="")
+									.small-title Контроль эксплуатации
+									p Мониторинг условий эксплуатации и технического состояния автопарка и оборудования
+								a.item(href="")
+									img(src="../img/ma6.svg", alt="")
+									.small-title Анализ параметров датчиков
+									p Контроль дополнительных параметров мониторинга для решения широкого спектра задач
+								a.item(href="")
+									img(src="../img/ma7.svg", alt="")
+									.small-title Контроль территорий эксплуатации
+									p Исключение «левых» рейсов, несанкционированного доступа и работ на сторонних производственных объектах
+						section
+							.end-block
+								h2 Начните свой проект с нами уже сегодня!
+				.feedback
+					.name Обратная связь
+					a(href="").link.next-main-link
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					.helper-ui-text нажмите на кнопку
+				include modules/bottom_modal.jade
+
+
+
+
+		
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="https://use.fontawesome.com/856283dff2.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/hammer.js")
+		script(src="js/jquery.hammer.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/jquery.mCustomScrollbar.concat.min.js")
+		script(src="js/app.js")

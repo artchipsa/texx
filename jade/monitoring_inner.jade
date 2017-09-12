@@ -1,0 +1,111 @@
+doctype
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Texx
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="css/jquery.mCustomScrollbar.min.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		.glogal-wrapper
+			include modules/header.jade
+			.assets-preload
+				include ../img/assets.svg
+			.overflow-wrapper
+				.main-content.inner
+					a(href="#").scroll-up.scroll-control
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					a(href="#").scroll-down.scroll-control
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					.navigation-bar
+						.section-nav
+							.top
+								.side-title Возможности мониторинга
+								a.back-link(href="#")
+									svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+										use(xlink:href="#arrow-left")
+									span Назад
+							.bottom
+								.mobile-scroll
+									ul.mobile-scroll-container
+										li.active.mobile-scroll-elem
+											a(href="#") Онлайн контроль передвижения
+										li.mobile-scroll-elem
+											a(href="#") Контроль топлива
+										li.mobile-scroll-elem
+											a(href="#") Контроль прохождения маршрутов
+										li.mobile-scroll-elem
+											a(href="#") Мониторинг активности сотрудников
+										li.mobile-scroll-elem
+											a(href="#") Контроль эксплуатации
+										li.mobile-scroll-elem
+											a(href="#") Анализ параметров датчиков
+										li.mobile-scroll-elem
+											a(href="#") Контроль территорий эксплуатаций
+						.page-nav
+							a.back-link(href="#")
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+								span Назад
+					.scrolled-content
+						section
+							h2 Онлайн контроль перемещений
+							img.monitoring(src="../img/ma1.svg", alt="")
+							p.text Wialon предлагает больше, чем просто отображение объектов на карте. С нашим решением вы получаете объективные данные об активности и состоянии объекта в реальном времени и оперативно реагируете на тревожные события.
+						section.double-list-section
+							.item
+								h3 Онлайн мониторинг
+								ul
+									li
+										span Отслеживание перемещений;
+									li
+										span Мониторинг параметров активности и состояния объекта;
+									li
+										span Система онлайн уведомлений;
+									li
+										span Режим слежения за отдельным объектом;
+									li
+										span Быстрый доступ к основной информации об объекте.
+							.item
+								h3 Собственная монтажная служба (РСТ)
+								ul
+									li
+										span Самые популярные карты с множеством слоев, включая пробки и профили моря;
+									li
+										span Собственный картографический сервис и приложение Gurtam Maps;
+									li
+										span Центрирование карты по объектам;
+									li
+										span Маркеры событий на карте.
+
+						section
+							.end-block
+								h2 Начните свой проект с нами уже сегодня!
+				.feedback
+					.name Обратная связь
+					a(href="").link.next-main-link
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					.helper-ui-text нажмите на кнопку
+				include modules/bottom_modal.jade
+
+
+
+
+		
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="https://use.fontawesome.com/856283dff2.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/hammer.js")
+		script(src="js/jquery.hammer.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/jquery.mCustomScrollbar.concat.min.js")
+		script(src="js/app.js")

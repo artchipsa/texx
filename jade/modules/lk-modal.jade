@@ -1,0 +1,49 @@
+.modal-container#lk_modal
+	.modal-content
+		a(href="#").close-modal
+			img(src="../img/modal_close.svg", alt="")
+		.row.col-container
+			.col-lg-3.col-md-3.col-container
+				.slide-sidebar
+					h2 Вход в личный кабинет
+					ul(role="tablist").tabs
+							li(role="presentation").active
+								a(href="#login" aria-controls="login" role="tab" data-toggle="tab") Вход в систему
+							li(role="presentation")
+								a(href="#registration" aria-controls="registration" role="tab" data-toggle="tab") Регистрация
+							li(role="presentation")
+								a(href="#demo" aria-controls="demo" role="tab" data-toggle="tab") Демо–вход
+					.require-text * — поля обязательные для заполнения
+			.col-lg-9.col-md-9.col-container
+				.slide-content.tab-content
+					.tab-pane.fade.in.active#login
+						.flex-column
+							p В личном кабинете вы сможете просматривать историю покупок, и еще множество других функций
+							form
+								.form-group
+									input.required(type="text", name="", placeholder="Логин *")
+								.form-group
+									input.required(type="text", name="", placeholder="Пароль *")
+								.form-group
+									input.btn.default(type="submit", value="Войти")
+					.tab-pane.fade#registration
+						.flex-column
+							p В личном кабинете вы сможете просматривать историю покупок, и еще множество других функций
+							form
+								.form-group
+									input.required(type="text", name="", placeholder="Логин *")
+								.form-group
+									input.required(type="text", name="", placeholder="Пароль *")
+								.form-group
+									input.btn.default(type="submit", value="Войти")
+					.tab-pane.fade#demo
+						.flex-column
+							p В личном кабинете вы сможете просматривать историю покупок, и еще множество других функций
+							form
+								.form-group
+									input.required(type="text", name="", placeholder="Логин *")
+								.form-group
+									input.required(type="text", name="", placeholder="Пароль *")
+								.form-group
+									input.btn.default(type="submit", value="Войти")
+

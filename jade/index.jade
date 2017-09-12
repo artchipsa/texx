@@ -1,0 +1,617 @@
+doctype
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		title Texx
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/bootstrap-theme.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css")
+		link(rel="stylesheet", href="css/style.css")
+	body
+		include modules/header.jade
+		.assets-preload
+			include ../img/assets.svg
+		.overflow-wrapper
+			include modules/search-modal.jade
+			include modules/lk-modal.jade
+			include modules/callback_modal.jade
+			include modules/left-menu.jade
+			.main-slider
+				//- TODO Video
+				.fixed-slider-arrow
+					a.arrow.prev(href="")
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-left")
+					a.arrow.next(href="")
+						svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+							use(xlink:href="#arrow-right")
+				.fixed-slider-counter
+					span.slider-current 01
+					span.slider-length 05
+				.owl-carousel.fixed-slider
+					.item(style="background-image: url(../img/main-slider.jpg)")
+						.container-fluid.abs-container
+							.row
+								.col-lg-10.col-lg-offset-1
+									.content
+										.left-top-text Маршрут #[br] известен. #[span.red Всегда.]
+										.center-bottom-text
+											h2 Лидер в сфере мониторинга транспорта
+					.item.special(style="background-image: url(../img/main-slider.png)")
+						.container-fluid.abs-container.fullscreen
+							.row
+								.col-lg-10.col-lg-offset-1
+									.content
+										.col-lg-3.col-md-3.col-container
+											.slide-sidebar
+												h2 Teltonika Fm 1100
+												a(href="#" class="bottom-link")
+													.circle
+														span +
+													.more подробнее
+										.col-lg-9.col-md-9.col-container
+											.special-content
+												.abs-time Акция  действительна до сентября 
+												.small-text
+													p Fm 1100 один из самых компактных трекеров в своем классе.
+													p Поддерживает ГЛОНАСС/GPS
+												.big-text – 20% на трекеры
+
+
+
+					.item
+						.container-fluid.abs-container
+							.row
+								.col-lg-10.col-lg-offset-1
+									.content
+										.left-top-text Маршрут #[br] известен. #[span.red Всегда.]
+										.center-bottom-text
+											h2 Лидер в сфере мониторинга транспорта
+					.item
+						.container-fluid.abs-container
+							.row
+								.col-lg-10.col-lg-offset-1
+									.content
+										.left-top-text Маршрут #[br] известен. #[span.red Всегда.]
+										.center-bottom-text
+											h2 Лидер в сфере мониторинга транспорта
+					.item
+						.container-fluid.abs-container
+							.row
+								.col-lg-10.col-lg-offset-1
+									.content
+										.left-top-text Маршрут #[br] известен. #[span.red Всегда.]
+										.center-bottom-text
+											h2 Лидер в сфере мониторинга транспорта
+			
+			.main-content#mainpage
+				.main-container
+					section
+						.next-block
+							.name О компании
+							a(href="").link.next-main-link.active
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-sm-12.col-container
+										.slide-sidebar
+											h2 О компании
+											a(href="#").bottom-link
+												.circle
+													span +
+												.more подробнее
+									.col-lg-9.col-md-9.col-sm-12.col-container
+										.slide-content.flex-column
+											p.small-text Мы обеспечиваем информацией, необходимой для эффективного управления автопарками в любой точке России и ближнего зарубежья.
+											p.big-text Компания создавалась как профессиональный интегратор систем GPS мониторинга. Сегодня это Группа Компаний занимающихся поставкой, внедрением, обслуживанием и разработкой систем спутникового мониторинга транспорта.
+						.next-block
+							.name Этапы / Услуги
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											ul(role="tablist").tabs
+												li(role="presentation").active
+													a(href="#stages" aria-controls="stages" role="tab" data-toggle="tab") Этапы
+												li(role="presentation")
+													a(href="#services" aria-controls="services" role="tab" data-toggle="tab") Услуги
+											a(href="#").bottom-link
+												.circle
+													span +
+												.more подробнее
+									.col-lg-9.col-md-9.col-container
+										.tab-content
+											.tab-pane.fade.in.active#stages
+												.slide-content.services
+													.fixed-slider-arrow
+														a.arrow.prev(href="")
+															svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+																use(xlink:href="#arrow-left")
+														a.arrow.next(href="")
+															svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+																use(xlink:href="#arrow-right")
+													.fixed-slider-counter
+														span.slider-current 01
+														span.slider-length 05
+													.fadetext
+													.owl-carousel.service-slider
+														.item
+															h2 Консультация
+															.text
+																p Давайте для начала разберёмся, нужен ли вашей компании подобный контроль за работой транспорта, и какие вопросы позволит решить система ГЛОНАСС/GPS мониторинга? В чем секрет успешного внедрения и последующей эксплуатации системы? Как не ошибиться при выборе решения и его поставщика? Какие технические возможности имеют системы и каковы тенденции их развития? Какие основные особенности предоставления услуг мониторинга транспорта компаниями существуют сейчас на рынке и их отличия?
+																p Ответы на эти вопросы позволят вам более существенно разбираться во всех нюансах работы систем спутникового мониторинга. Вы всегда можете получить качественную консультацию у наших специалистов по телефону или электронной почте.(контакты).
+
+														.item
+															h2 Демонстрация возможностей системы
+															.text
+																p Перед тем, как что-то приобрести, всегда хочется это «потрогать» или попробовать в действии. При этом очень важно, чтобы компетентный человек мог подробно рассказать о возможностях продукта, ответить на возникающие вопросы и сравнить различные модели. Мы с удовольствием предоставим Вам такую возможность при выборе системы мониторинга.
+														.item
+															h2 Обследование объектов
+															.text
+																p В случае если у вашего предприятия парк автомобилей и спецтехники включает себя редкие образцы или технику старых годов выпуска, а также если требуется какое-нибудь нестандартное решение может потребоваться обследование объектов мониторинга, для того чтобы оценить техническое состояние и возможности применения тех или иных средств контроля. Возможно, на ваших ТС или на ее части уже уставлено подобное оборудование и вы хотите заменить его вместе с системой или наоборот оценить возможность интеграции в одну из наших систем и перейти на обслуживание в нашу организацию. В любом из этих случаев мы можем согласовать с вашими представителями требующееся обследование с предоставлением последующего экспертного заключения и коммерческого предложения.
+														.item
+															h2 Тестовая эксплуатация
+															.text
+																p Допустим вы уже провели все необходимые предшествующие внедрению процедуры: проконсультировались, выбрали интересующую систему, провели обследование автопарка, получили от нас коммерческое предложение и сопутствующие сделке документы, вас все устраивает и вы готовы к сделке, но хочется быть до конца уверенным, что ваши затраты не будут напрасными и принесут желаемый результат. Именно для этого существует услуга тестовой эксплуатации системы на ваших транспортных средствах. Воспользовавшись ей, вы можете оценить удобство работы с системой, а также качество сервиса и услуг, предоставляемых нашей компанией. Увидев реальные показатели подконтрольных вам объектов еще раз убедиться в правильности своего решения об оснащении автопарка системой спутникового мониторинга. Всю необходимую информацию по этому вопросу вы можете получить в отделе прямых продаж или заполните пожалуйста заявку на тестовую эксплуатацию.
+											.tab-pane.fade#services
+												.slide-content.services
+													.fixed-slider-arrow
+														a.arrow.prev(href="")
+															svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+																use(xlink:href="#arrow-left")
+														a.arrow.next(href="")
+															svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+																use(xlink:href="#arrow-right")
+													.fixed-slider-counter
+														span.slider-current 01
+														span.slider-length 05
+													.owl-carousel.service-slider
+														.item
+															h2 Проектирование и ввод в эксплуатацию
+														.item
+															h2 Комплексная поддержка системы
+															.text
+																p Для того чтобы этому процессу ничего не мешало необходима одна простая вещь - бесперебойная передача данных. Казалось бы здесь все просто и никаких проблем нет, вы выбрали надежное оборудование, понятное и стабильно работающее программное обеспечение, но как показывает практика этого еще не достаточно. Давайте попробуем разобраться какие препятствия могут появиться у нас на этом пути!?
+																p Во-первых, как бы ни было это грустно, но далеко не все работники вашего предприятия могут разделять ваше желание сэкономить деньги для развития
+																p Во-вторых с автомобилем могут проводиться работы, не соответствующие регламенту и оказывающие влияние на работу электрооборудования и системы в частности или устанавливаться дополнительное оборудование, создающее помехи для работы системы.
+														.item
+															h2 Стандарты сервиса
+														.item
+															h2 Обучение
+															.text
+																p Неотъемлемой частью успешного внедрения системы остается грамотное использование диспетчерского программного обеспечения. Для того чтобы ваши сотрудники могли использовать все возможности системы с минимальными временными затратами существует услуга &quot;Обучение эксплуатации системы&quot; По вашему желанию мы можем провести как групповые так и индивидуальные занятия на вашей территории или пригласить к нам в офис а также проводить дистанционное обучение.
+
+
+						.next-block
+							.name Мониторинг
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											h2 Мониторинг
+											a(href="/monitoring.html").bottom-link
+												.circle
+													span +
+												.more подробнее
+									.col-lg-9.col-md-9.col-container
+										.slide-content.flex-column
+											p.small-text Наша компания занимается установкой самых высокоэффективных спутниковых систем – ГЛОНАСС (глобальная навигационная спутниковая система) и GPS/GSM.
+											.big-links
+												ul
+													li
+														a(href="") Возможности
+													li
+														a(href="") Калькулятор эффективности
+													li
+														a(href="") Программное обеспечение
+											
+						.next-block
+							.name Оборудование
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											h2 Оборудование
+											a(href="#").bottom-link
+												.circle
+													span +
+												.more подробнее
+									.col-lg-9.col-md-9.col-container
+										.slide-content
+											.fixed-slider-arrow
+												a.arrow.prev(href="")
+													svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+														use(xlink:href="#arrow-left")
+												a.arrow.next(href="")
+													svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+														use(xlink:href="#arrow-right")
+											.fixed-slider-counter
+												span.slider-current 01
+												span.slider-length 05
+											.owl-carousel.product-slider
+												.item
+													p.small-text Наша компания занимается установкой самых высокоэффективных спутниковых систем – ГЛОНАСС (глобальная навигационная спутниковая система) и GPS/GSM.
+													img(src="img/product_slider.png", alt="")
+													.bottom-slider-names
+														.tag Система контроля транспорта
+														.name Teltonika FM1100
+												.item
+													p.small-text Наша компания занимается установкой самых высокоэффективных спутниковых систем – ГЛОНАСС (глобальная навигационная спутниковая система) и GPS/GSM.
+													img(src="img/product_slider.png", alt="")
+													.bottom-slider-names
+														.tag Система контроля транспорта
+														.name Teltonika FM1100
+						.next-block
+							.name Отраслевые #[br] решения
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											h2 Отраслевые решения
+											a(href="#").bottom-link
+												.circle
+													span +
+												.more подробнее
+									.col-lg-9.col-md-9.col-container
+										.slide-content
+											.fixed-slider-arrow
+												a.arrow.prev(href="")
+													svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+														use(xlink:href="#arrow-left")
+												a.arrow.next(href="")
+													svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+														use(xlink:href="#arrow-right")
+											.fixed-slider-counter
+												span.slider-current 01
+												span.slider-length 05
+											.owl-carousel
+												.item
+													p.small-text Контроль сельскохозяйственной техники, оборудования и технологических процессов
+													.bottom-slider-names
+														.name Мониторинг в сельском  хозяйстве
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Предотвращение угонов
+												.item
+													p.small-text Прозрачность и эффективность деятельности коммунальных служб
+													.bottom-slider-names
+														.name Коммунальные службы
+												.item
+													p.small-text Продвинутый уровень контроля, поддержки и управления
+													.bottom-slider-names
+														.name Грузоперевозки и логистика
+												.item
+													p.small-text Сокращение расходов на техобслуживание и обеспечение безопасности на объекте
+													.bottom-slider-names
+														.name Строительство
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Пассажирские перевозки
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Топливозаправщики
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Железнодорожная техника
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Речные и морские суда
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Рефрижераторы
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Лизинговым компаниям
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Такси, прокат, аренда
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Автосалонам
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Дистрибуция и ритейл
+												.item
+													p.small-text Безопасность личных и корпоративных автомобилей
+													.bottom-slider-names
+														.name Курьерские службы
+						.next-block
+							.name Стоимость
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											h2 Стоимость
+											a(href="#").btn.default Рассчитать стоимость
+									.col-lg-9.col-md-9.col-container
+										.slide-content.flex-column
+											p.small-text Контроль сельскохозяйственной техники, оборудования и технологических процессов
+											.car-img
+												img(src="img/car.svg", alt="")
+						.next-block
+							.name Этапы / Услуги
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											ul(role="tablist").tabs
+												li(role="presentation").active
+													a(href="#news" aria-controls="news" role="tab" data-toggle="tab") Новости
+												li(role="presentation")
+													a(href="#blog" aria-controls="blog" role="tab" data-toggle="tab") Блог
+											a(href="#").btn.default Все новости
+									.col-lg-9.col-md-9.col-container
+										.slide-content
+											.tab-content
+												.tab-pane.fade.in.active#news
+													.article-wrapper
+														.fullhalf-block
+															.time 04.07.2016
+															a(href="").h2 Больше контроля качества за оборудованием
+															p Компанией Omicomm на производстве запущен дополнительный этап контроля качества выпускаемой продукции, специально для этого отдел технического контроля разработал специализированный стенд длительной проверки, позволяющий в автоматическом режиме и под максимальными нагрузками проверить все типы датчиков уровня топлива Omnicomm LLS.
+															a(href="").more Читать
+														.small-block
+															a(href="").new
+																.time 04.07.2016
+																h2 Идентификация водителей
+															a(href="").new
+																.time 04.07.2016
+																h2 Аналитические отчеты
+															a(href="").new
+																.time 04.07.2016
+																h2 Встречайте новый мобильный интерфейс Wialon!
+															a(href="").new
+																.time 04.07.2016
+																h2 Встречайте новый мобильный интерфейс Wialon!
+												.tab-pane.fade#blog
+													.article-wrapper
+														.fullhalf-block
+															.time 04.07.2016
+															a(href="").h2 Больше контроля качества за оборудованием
+															p Компанией Omicomm на производстве запущен дополнительный этап контроля качества выпускаемой продукции, специально для этого отдел технического контроля разработал специализированный стенд длительной проверки, позволяющий в автоматическом режиме и под максимальными нагрузками проверить все типы датчиков уровня топлива Omnicomm LLS.
+															a(href="").more Читать
+														.small-block
+															a(href="").new
+																.time 04.07.2016
+																h2 Идентификация водителей
+															a(href="").new
+																.time 04.07.2016
+																h2 Аналитические отчеты
+															a(href="").new
+																.time 04.07.2016
+																h2 Встречайте новый мобильный интерфейс Wialon!
+															a(href="").new
+																.time 04.07.2016
+																h2 Встречайте новый мобильный интерфейс Wialon!
+						.next-block
+							.name Партнерам
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content(style="background-image: url('img/main_map.png')")
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											h2 Партнерам
+											a(href="#").bottom-link
+												.circle
+													span +
+												.more подробнее
+									.col-lg-9.col-md-9.col-container
+										.slide-content.flex-column
+											p.small-text Наша компания занимается установкой самых высокоэффективных спутниковых систем – ГЛОНАСС (глобальная навигационная спутниковая система) и GPS/GSM.
+											.bottom-slider-names
+												.name.wide Выгодные условия для постоянных партнеров нашего сервиса
+						.next-block
+							.name Обратная связь
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											h2 Обратная связь
+											a(href="#").btn.default Отправить
+									.col-lg-9.col-md-9.col-container
+										.slide-content.flex-column
+											p.small-text.wide Уважаемые клиенты! #[br]Для оперативной связи с подразделениями нашей компании заполните, пожалуйста, форму и отправьте запрос. Наш специалист свяжется с Вами в ближайшее время.
+											form
+												.form-group
+													select.custom_select
+														option(value="1") Техническая поддержка
+														option(value="2") Бухгалтерия
+														option(value="3") Отдел по работе с клиентами
+												.form-group
+													input(type="text", name="", placeholder="Наименование организации")
+												.form-group
+													input(type="text", name="", placeholder="Контактное лицо")
+												.form-group
+													input(type="text", name="", placeholder="Телефон")
+												.form-group
+													input(type="text", name="", placeholder="Электронная почта")
+
+						.next-block
+							.name Контакты
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content(style="background-image: url(img/map.jpg)")
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											h2 Контакты
+									.col-lg-9.col-md-9.col-container
+										.slide-content.flex-column
+											.contacts-col
+												.contacts-group
+													.name Адрес
+													.contacts-content г. Москва, Коломенский проезд, д. 14, Бизнес-центр "Александр Плац" 6 этаж м. Каширская (зеленая ветка, последний вагон из центра)
+												.contacts-group
+													.name Телефоны/факсы
+													a.contacts-content(href="") (495) 223-10-80
+													a.contacts-content(href="") (495) 755-83-24
+												.contacts-group
+													.name Электронная почта:
+													a.contacts-content(href="") texx@sendmail.com
+											.contacts-group.bottom
+												.name Время работы
+												.contacts-content 9:00 – 18:00
+						.next-block
+							.name ТЭККС — 
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen
+						.content
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											h2 ТЭККС — 
+									.col-lg-9.col-md-9.col-container
+										.slide-content.flex-column
+											p.small-text.wide Уважаемые клиенты! #[br]Для оперативной связи с подразделениями нашей компании заполните, пожалуйста, форму и отправьте запрос. Наш специалист свяжется с Вами в ближайшее время.
+											.bottom-icon-links
+												a(href="")
+													img(src="img/tech.svg", alt="")
+													span Калькулятор эффективности
+												a(href="")
+													img(src="img/exit.svg", alt="")
+													span Демо–вход
+												a(href="")
+													img(src="img/solution.svg", alt="")
+													span Отраслевые решения
+												a(href="")
+													img(src="img/interface.svg", alt="")
+													span Новости
+						.next-block.footer
+							.copyright © 2007–2014 #[span ТЭККС — ГЛОНАСС/GPS]
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text листайте вниз
+					section.fullscreen.footer
+						.content
+							.section-container
+								.row.col-container
+									.col-lg-3.col-md-3.col-container
+										.slide-sidebar
+											.copyright © 2007–2014 #[span ТЭККС — ГЛОНАСС/GPS]
+									.col-lg-9.col-md-9.col-container
+										.slide-content.flex-column
+											.link-block
+												ul
+													li
+														a(href="") Персональный мониторинг
+													li
+														a(href="") Местоположение человека 
+													li
+														a(href="") Слежение за авто
+													li
+														a(href="") Документы
+											.link-block
+												ul
+													li
+														a(href="") Глонасс – мониторинг
+													li
+														a(href="") Gps –трекеры
+													li
+														a(href="") Gps-ошейник
+											.link-block
+												ul
+													li
+														a(href="") Вакансии
+													li
+														a(href="") Блог
+													li
+														a(href="") Поддержка
+													li
+														a(href="") Стать Партнером
+											.socials-bottom
+												ul
+													li
+														a(href="")
+															i.fa.fa-facebook-official(aria-hidden="true")
+													li
+														a(href="")
+															i.fa.fa-instagram(aria-hidden="true")
+													li
+														a(href="")
+															i.fa.fa-youtube-play(aria-hidden="true")
+						.next-block.footer
+							.copyright Сделано в студии дизайна «Чипса»
+							a(href="").link.next-main-link
+								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+									use(xlink:href="#arrow-left")
+							.helper-ui-text в самый верх
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="https://use.fontawesome.com/856283dff2.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/app.js")
+
+
