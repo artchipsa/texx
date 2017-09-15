@@ -25,12 +25,19 @@ html
 							use(xlink:href="#arrow-left")
 					.navigation-bar
 						.section-nav
-							.side-title Новости
-							ul
-								li
-									a(href="/about.html") Предыдущая
-								li
-									a(href="/about_adv.html") Следующая
+							.top
+								.side-title Новости
+								a.back-link(href="#")
+									svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+										use(xlink:href="#arrow-left")
+									span Назад
+							.bottom
+								.mobile-scroll
+									ul.mobile-scroll-container
+										li.mobile-scroll-elem
+											a(href="/about.html") Предыдущая
+										li.mobile-scroll-elem
+											a(href="/about_adv.html") Следующая
 						.page-nav
 							a.back-link(href="#")
 								i.fa.fa-times(aria-hidden="true")
@@ -41,7 +48,7 @@ html
 								.time 04.07.2016
 								h1 Встречайте новый мобильный интерфейс Wialon!
 								.dark-img
-									img(src="../img/about.jpg", alt="")
+									img(src=" img/about.jpg", alt="")
 									.overlay
 								p Мы обеспечиваем информацией, необходимой для эффективного управления автопарками в любой точке России и ближнего зарубежья. Мы помогаем экономить время и деньги! Содействуем процветанию и прогрессу Вашего бизнеса, позволяя добиться наиболее оптимального использования машин, механизмов и потребляемого ими топлива. 
 								p Мы выявляем и тестируем все новые продукты на рынке, вместе с нашими партнёрами повышаем технологичность систем ГЛОНАСС/GPS мониторинга, чтобы предложить нашим заказчикам только надежные и современные решения.

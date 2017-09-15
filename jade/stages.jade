@@ -20,7 +20,7 @@ html
 				include modules/lk-modal.jade
 				.main-content.inner.wider
 					.abs-top-control
-						ul(role="tablist").tabs
+						ul(role="tablist").tabs.abs-tabs-control
 							li(role="presentation").active
 								a(href="#stages" aria-controls="stages" role="tab" data-toggle="tab") Этапы
 							li(role="presentation")
@@ -36,17 +36,19 @@ html
 							.navigation-bar
 								.section-nav
 									.side-title
-									ul
-										li.active
-											a(href="#") Консультация
-										li
-											a(href="#") Демонстрация
-										li
-											a(href="#") Обследование объектов
-										li
-											a(href="#") Тестовая эксплуатация
-										li
-											a(href="#") Проектирование и монтаж
+									.bottom
+										.mobile-scroll
+											ul.mobile-scroll-container
+												li.active.mobile-scroll-elem
+													a(href="#") Консультация
+												li.mobile-scroll-elem
+													a(href="#") Демонстрация
+												li.mobile-scroll-elem
+													a(href="#") Обследование объектов
+												li.mobile-scroll-elem
+													a(href="#") Тестовая эксплуатация
+												li.mobile-scroll-elem
+													a(href="#") Проектирование и монтаж
 								.page-nav
 									a.back-link(href="#")
 										svg(viewBox="0 0 100 100", class="svgico arrow-icon")
@@ -56,7 +58,7 @@ html
 								section
 									h2 Консультация
 									.dark-img
-										img(src="../img/about.jpg", alt="")
+										img(src=" img/about.jpg", alt="")
 										.overlay
 											h2 Компания создавалась как #[span профессиональный интегратор] систем GPS мониторинга
 									h3 Давайте для начала разберёмся, нужен ли вашей компании подобный контроль за работой транспорта, и какие вопросы позволит решить система ГЛОНАСС/GPS мониторинга?
@@ -71,13 +73,15 @@ html
 							.navigation-bar
 								.section-nav
 									.side-title
-									ul
-										li.active
-											a(href="#") Комплексная поддержка
-										li
-											a(href="#") Стандарты сервиса
-										li
-											a(href="#") Обучение
+									.bottom
+										.mobile-scroll
+											ul.mobile-scroll-container
+												li.active.mobile-scroll-elem
+													a(href="#") Комплексная поддержка
+												li.mobile-scroll-elem
+													a(href="#") Стандарты сервиса
+												li.mobile-scroll-elem
+													a(href="#") Обучение
 								.page-nav
 									a.back-link(href="#")
 										svg(viewBox="0 0 100 100", class="svgico arrow-icon")
@@ -87,7 +91,7 @@ html
 								section
 									h2 Комплексная поддержка
 									.dark-img
-										img(src="../img/about.jpg", alt="")
+										img(src=" img/about.jpg", alt="")
 										.overlay
 											h2 Компания создавалась как #[span профессиональный интегратор] систем GPS мониторинга
 									h3 Давайте для начала разберёмся, нужен ли вашей компании подобный контроль за работой транспорта, и какие вопросы позволит решить система ГЛОНАСС/GPS мониторинга?
@@ -112,6 +116,8 @@ html
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
 		script(src="https://use.fontawesome.com/856283dff2.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/hammer.js")
+		script(src="js/jquery.hammer.js")
 		script(src="js/bootstrap.min.js")
 		script(src="js/owl.carousel.min.js")
 		script(src="js/jquery.mCustomScrollbar.concat.min.js")

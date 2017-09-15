@@ -20,7 +20,12 @@ html
 					.abs-top-control
 						.navigation-bar
 							.section-nav
-								.side-title Стоимость
+								.top
+									.side-title Стоимость
+									a.back-link(href="#")
+										svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+											use(xlink:href="#arrow-left")
+										span Назад
 							.page-nav
 								a.back-link(href="#")
 									svg(viewBox="0 0 100 100", class="svgico arrow-icon")
@@ -37,25 +42,25 @@ html
 								a(href="#light" aria-controls="light" role="tab" data-toggle="tab") Легковой
 					.tab-content
 						.tab-pane.article-wrapper.fade.in.active#heavy
-							.fullwidth
+							.fullwidth.scrolled-content
 								.car-block
 									include ../img/Fura_with_point.svg
-								.oversize-block
-									.pices-block
-										a(href="#" data-id="F_poit_1").piece Контроль местоположения качества вождения
-										a(href="#" data-id="F_poit_2").piece Контроль ремня безопасноти
-										a(href="#" data-id="F_poit_3").piece Связь с водителем
-										a(href="#" data-id="F_poit_4").piece Контроль температуры и оборотов двигателя
-										a(href="#" data-id="F_poit_5").piece Контроль расхода топлива
-										a(href="#" data-id="F_poit_6").piece Контроль температуры в кузове
-										a(href="#" data-id="F_poit_7").piece Контроль назначения водителей
-										a(href="#" data-id="F_poit_8").piece Контроль пассажтропотока
-										a(href="#" data-id="F_poit_9").piece Контроль параметров в CAN–шине
-										a(href="#" data-id="F_poit_10").piece Отправка сигнала тревоги
-										a(href="#" data-id="F_poit_11").piece Фото и видео фиксация
-										a(href="#" data-id="F_poit_12").piece Контроль заправок и сливов
-										a(href="#" data-id="F_poit_13").piece Контроль нагрузки на ось
-										a(href="#" data-id="F_poit_14").piece Контроль открытия дверей
+								.oversize-block.mobile-scroll
+									.pices-block.mobile-scroll-container
+										a(href="#" data-id="F_poit_1").piece.mobile-scroll-elem Контроль местоположения качества вождения
+										a(href="#" data-id="F_poit_2").piece.mobile-scroll-elem Контроль ремня безопасноти
+										a(href="#" data-id="F_poit_3").piece.mobile-scroll-elem Связь с водителем
+										a(href="#" data-id="F_poit_4").piece.mobile-scroll-elem Контроль температуры и оборотов двигателя
+										a(href="#" data-id="F_poit_5").piece.mobile-scroll-elem Контроль расхода топлива
+										a(href="#" data-id="F_poit_6").piece.mobile-scroll-elem Контроль температуры в кузове
+										a(href="#" data-id="F_poit_7").piece.mobile-scroll-elemКонтроль назначения водителей
+										a(href="#" data-id="F_poit_8").piece.mobile-scroll-elem Контроль пассажтропотока
+										a(href="#" data-id="F_poit_9").piece.mobile-scroll-elem Контроль параметров в CAN–шине
+										a(href="#" data-id="F_poit_10").piece.mobile-scroll-elem Отправка сигнала тревоги
+										a(href="#" data-id="F_poit_11").piece.mobile-scroll-elem Фото и видео фиксация
+										a(href="#" data-id="F_poit_12").piece.mobile-scroll-elem Контроль заправок и сливов
+										a(href="#" data-id="F_poit_13").piece.mobile-scroll-elem Контроль нагрузки на ось
+										a(href="#" data-id="F_poit_14").piece.mobile-scroll-elem Контроль открытия дверей
 								.info-oversize
 									.info-block
 										.amount-calc
@@ -81,22 +86,22 @@ html
 											a(href="").btn.invert Добавить расчет
 
 						.tab-pane.article-wrapper.fade#light
-							.fullwidth
+							.fullwidth.scrolled-content
 								.car-block
 									include ../img/Mers_with_point.svg
-								.oversize-block
-									.pices-block
-										a(href="#" data-id="M_poit_1").piece Контроль местоположения качества вождения
-										a(href="#" data-id="M_poit_2").piece Контроль ремня безопасноти
-										a(href="#" data-id="M_poit_3").piece Связь с водителем
-										a(href="#" data-id="M_poit_4").piece Контроль температуры и оборотов двигателя
-										a(href="#" data-id="M_poit_5").piece Контроль расхода топлива
-										a(href="#" data-id="M_poit_6").piece Контроль температуры в кузове
-										a(href="#" data-id="M_poit_7").piece Контроль назначения водителей
-										a(href="#" data-id="M_poit_8").piece Контроль пассажтропотока
-										a(href="#" data-id="M_poit_9").piece Контроль параметров в CAN–шине
-										a(href="#" data-id="M_poit_10").piece Отправка сигнала тревоги
-										a(href="#" data-id="M_poit_11").piece Фото и видео фиксация
+								.oversize-block.mobile-scroll
+									.pices-block.mobile-scroll-container
+										a(href="#" data-id="M_poit_1").piece.mobile-scroll-elem Контроль местоположения качества вождения
+										a(href="#" data-id="M_poit_2").piece.mobile-scroll-elem Контроль ремня безопасноти
+										a(href="#" data-id="M_poit_3").piece.mobile-scroll-elem Связь с водителем
+										a(href="#" data-id="M_poit_4").piece.mobile-scroll-elem Контроль температуры и оборотов двигателя
+										a(href="#" data-id="M_poit_5").piece.mobile-scroll-elem Контроль расхода топлива
+										a(href="#" data-id="M_poit_6").piece.mobile-scroll-elem Контроль температуры в кузове
+										a(href="#" data-id="M_poit_7").piece.mobile-scroll-elem Контроль назначения водителей
+										a(href="#" data-id="M_poit_8").piece.mobile-scroll-elem Контроль пассажтропотока
+										a(href="#" data-id="M_poit_9").piece.mobile-scroll-elem Контроль параметров в CAN–шине
+										a(href="#" data-id="M_poit_10").piece.mobile-scroll-elem Отправка сигнала тревоги
+										a(href="#" data-id="M_poit_11").piece.mobile-scroll-elem Фото и видео фиксация
 								.info-oversize
 									.info-block
 										.amount-calc
@@ -123,7 +128,7 @@ html
 				.modal-container#call_request
 					.modal-content
 						a(href="#").close-modal
-							img(src="../img/modal_close.svg", alt="")
+							img(src=" img/modal_close.svg", alt="")
 						.row.col-container
 							.col-lg-3.col-md-3.col-container
 								.slide-sidebar
@@ -171,6 +176,8 @@ html
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
 		script(src="https://use.fontawesome.com/856283dff2.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/hammer.js")
+		script(src="js/jquery.hammer.js")
 		script(src="js/bootstrap.min.js")
 		script(src="js/owl.carousel.min.js")
 		script(src="js/jquery.mCustomScrollbar.concat.min.js")

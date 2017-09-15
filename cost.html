@@ -16,24 +16,28 @@
       <header>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-4 logo vcenter"><a href=""><img src="img/logo.svg" alt=""></a></div>
-            <div class="col-lg-8 col-md-6 col-sm-10 col-xs-8 vcenter menu resize-list-block">
-              <nav class="navbar navbar-default">
-                <div class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav">
-                    <li class="more"><a href="#"><span></span></a></li>
-                    <li class="nav-item"><a href="#">О компании</a></li>
-                    <li class="nav-item"><a href="#">Мониторинг</a></li>
-                    <li class="nav-item"><a href="#">Оборудование</a></li>
-                    <li class="nav-item"><a href="#">Стоимость</a></li>
-                  </ul>
+            <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12 logo vcenter"><a href=""><img src="img/logo.svg" alt=""></a>
+              <button type="button" data-toggle="collapse" data-target="#toggled-menu" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 vcenter">
+              <div id="toggled-menu" class="collapse navbar-collapse">
+                <div class="row">
+                  <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 vcenter menu resize-list-block">
+                    <nav class="navbar navbar-default">
+                      <ul class="nav navbar-nav">
+                        <li class="more"><a href="#"><span></span></a></li>
+                        <li class="nav-item"><a href="#">О компании</a></li>
+                        <li class="nav-item"><a href="#">Мониторинг</a></li>
+                        <li class="nav-item"><a href="#">Оборудование</a></li>
+                        <li class="nav-item"><a href="#">Стоимость</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12 vcenter phones"><a href="tel:8 (495) 223–10–80" class="phone">8 (495) 223–10–80</a></div>
+                  <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 vcenter user search"><a href="#search_modal" class="modal-handler"><i aria-hidden="true" class="fa fa-search"></i></a><a href="#lk_modal" class="modal-handler"><img src="img/lk.svg" alt=""><img src="img/lk-black.svg" alt=""></a></div>
                 </div>
-              </nav><a href="" class="burger"><span></span></a>
+              </div>
             </div>
-            <div class="col-lg-2 col-md-3 vcenter phones">
-              <div class="resize-list-block"><a href="tel:8 (495) 223–10–80" class="phone">8 (495) 223–10–80</a></div>
-            </div>
-            <div class="col-lg-1 col-md-2 vcenter user search"><a href="#search_modal" class="modal-handler"><i aria-hidden="true" class="fa fa-search"></i></a><a href="#lk_modal" class="modal-handler"><img src="img/lk.svg" alt=""><img src="img/lk-black.svg" alt=""></a></div>
           </div>
         </div>
       </header>
@@ -44,7 +48,12 @@
           <div class="abs-top-control">
             <div class="navigation-bar">
               <div class="section-nav">
-                <div class="side-title">Стоимость</div>
+                <div class="top">
+                  <div class="side-title">Стоимость</div><a href="#" class="back-link">
+                    <svg viewBox="0 0 100 100" class="svgico arrow-icon">
+                      <use xlink:href="#arrow-left"></use>
+                    </svg><span>Назад</span></a>
+                </div>
               </div>
               <div class="page-nav"><a href="#" class="back-link">
                   <svg viewBox="0 0 100 100" class="svgico arrow-icon">
@@ -63,7 +72,7 @@
           </div>
           <div class="tab-content">
             <div id="heavy" class="tab-pane article-wrapper fade in active">
-              <div class="fullwidth">
+              <div class="fullwidth scrolled-content">
                 <div class="car-block"><?xml version="1.0" encoding="UTF-8"?>
 <svg width="690px" height="405px" viewBox="0 0 690 405" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
@@ -471,8 +480,8 @@
     </g>
 </svg>
                 </div>
-                <div class="oversize-block">
-                  <div class="pices-block"><a href="#" data-id="F_poit_1" class="piece">Контроль местоположения качества вождения</a><a href="#" data-id="F_poit_2" class="piece">Контроль ремня безопасноти</a><a href="#" data-id="F_poit_3" class="piece">Связь с водителем</a><a href="#" data-id="F_poit_4" class="piece">Контроль температуры и оборотов двигателя</a><a href="#" data-id="F_poit_5" class="piece">Контроль расхода топлива</a><a href="#" data-id="F_poit_6" class="piece">Контроль температуры в кузове</a><a href="#" data-id="F_poit_7" class="piece">Контроль назначения водителей</a><a href="#" data-id="F_poit_8" class="piece">Контроль пассажтропотока</a><a href="#" data-id="F_poit_9" class="piece">Контроль параметров в CAN–шине</a><a href="#" data-id="F_poit_10" class="piece">Отправка сигнала тревоги</a><a href="#" data-id="F_poit_11" class="piece">Фото и видео фиксация</a><a href="#" data-id="F_poit_12" class="piece">Контроль заправок и сливов</a><a href="#" data-id="F_poit_13" class="piece">Контроль нагрузки на ось</a><a href="#" data-id="F_poit_14" class="piece">Контроль открытия дверей</a></div>
+                <div class="oversize-block mobile-scroll">
+                  <div class="pices-block mobile-scroll-container"><a href="#" data-id="F_poit_1" class="piece mobile-scroll-elem">Контроль местоположения качества вождения</a><a href="#" data-id="F_poit_2" class="piece mobile-scroll-elem">Контроль ремня безопасноти</a><a href="#" data-id="F_poit_3" class="piece mobile-scroll-elem">Связь с водителем</a><a href="#" data-id="F_poit_4" class="piece mobile-scroll-elem">Контроль температуры и оборотов двигателя</a><a href="#" data-id="F_poit_5" class="piece mobile-scroll-elem">Контроль расхода топлива</a><a href="#" data-id="F_poit_6" class="piece mobile-scroll-elem">Контроль температуры в кузове</a><a href="#" data-id="F_poit_7" class="piece mobile-scroll-elem">Контроль назначения водителей</a><a href="#" data-id="F_poit_8" class="piece mobile-scroll-elem">Контроль пассажтропотока</a><a href="#" data-id="F_poit_9" class="piece mobile-scroll-elem">Контроль параметров в CAN–шине</a><a href="#" data-id="F_poit_10" class="piece mobile-scroll-elem">Отправка сигнала тревоги</a><a href="#" data-id="F_poit_11" class="piece mobile-scroll-elem">Фото и видео фиксация</a><a href="#" data-id="F_poit_12" class="piece mobile-scroll-elem">Контроль заправок и сливов</a><a href="#" data-id="F_poit_13" class="piece mobile-scroll-elem">Контроль нагрузки на ось</a><a href="#" data-id="F_poit_14" class="piece mobile-scroll-elem">Контроль открытия дверей</a></div>
                 </div>
                 <div class="info-oversize">
                   <div class="info-block">
@@ -504,7 +513,7 @@
               </div>
             </div>
             <div id="light" class="tab-pane article-wrapper fade">
-              <div class="fullwidth">
+              <div class="fullwidth scrolled-content">
                 <div class="car-block"><?xml version="1.0" encoding="UTF-8"?>
 <svg width="705px" height="466px" viewBox="0 0 705 466" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
@@ -892,8 +901,8 @@
     </g>
 </svg>
                 </div>
-                <div class="oversize-block">
-                  <div class="pices-block"><a href="#" data-id="M_poit_1" class="piece">Контроль местоположения качества вождения</a><a href="#" data-id="M_poit_2" class="piece">Контроль ремня безопасноти</a><a href="#" data-id="M_poit_3" class="piece">Связь с водителем</a><a href="#" data-id="M_poit_4" class="piece">Контроль температуры и оборотов двигателя</a><a href="#" data-id="M_poit_5" class="piece">Контроль расхода топлива</a><a href="#" data-id="M_poit_6" class="piece">Контроль температуры в кузове</a><a href="#" data-id="M_poit_7" class="piece">Контроль назначения водителей</a><a href="#" data-id="M_poit_8" class="piece">Контроль пассажтропотока</a><a href="#" data-id="M_poit_9" class="piece">Контроль параметров в CAN–шине</a><a href="#" data-id="M_poit_10" class="piece">Отправка сигнала тревоги</a><a href="#" data-id="M_poit_11" class="piece">Фото и видео фиксация</a></div>
+                <div class="oversize-block mobile-scroll">
+                  <div class="pices-block mobile-scroll-container"><a href="#" data-id="M_poit_1" class="piece mobile-scroll-elem">Контроль местоположения качества вождения</a><a href="#" data-id="M_poit_2" class="piece mobile-scroll-elem">Контроль ремня безопасноти</a><a href="#" data-id="M_poit_3" class="piece mobile-scroll-elem">Связь с водителем</a><a href="#" data-id="M_poit_4" class="piece mobile-scroll-elem">Контроль температуры и оборотов двигателя</a><a href="#" data-id="M_poit_5" class="piece mobile-scroll-elem">Контроль расхода топлива</a><a href="#" data-id="M_poit_6" class="piece mobile-scroll-elem">Контроль температуры в кузове</a><a href="#" data-id="M_poit_7" class="piece mobile-scroll-elem">Контроль назначения водителей</a><a href="#" data-id="M_poit_8" class="piece mobile-scroll-elem">Контроль пассажтропотока</a><a href="#" data-id="M_poit_9" class="piece mobile-scroll-elem">Контроль параметров в CAN–шине</a><a href="#" data-id="M_poit_10" class="piece mobile-scroll-elem">Отправка сигнала тревоги</a><a href="#" data-id="M_poit_11" class="piece mobile-scroll-elem">Фото и видео фиксация</a></div>
                 </div>
                 <div class="info-oversize">
                   <div class="info-block">
@@ -927,7 +936,7 @@
           </div>
         </div>
         <div id="call_request" class="modal-container">
-          <div class="modal-content"><a href="#" class="close-modal"><img src="../img/modal_close.svg" alt=""></a>
+          <div class="modal-content"><a href="#" class="close-modal"><img src=" img/modal_close.svg" alt=""></a>
             <div class="row col-container">
               <div class="col-lg-3 col-md-3 col-container">
                 <div class="slide-sidebar">
@@ -979,6 +988,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/856283dff2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/jquery.hammer.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>

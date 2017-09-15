@@ -25,20 +25,27 @@ html
 							use(xlink:href="#arrow-left")
 					.navigation-bar
 						.section-nav
-							.side-title О компании
-							ul
-								li
-									a(href="/about.html") Компания «ТЭККС»
-								li
-									a(href="/about_adv.html") Преимущества
-								li
-									a(href="/about_partner.html") Партнерская сеть
-								li.active
-									a(href="/about_recommend.html") Нас рекомендуют
-								li
-									a(href="/about_license.html") Сертификаты, лицензии
-								li
-									a(href="/about_contact.html") Напишите нам
+							.top
+								.side-title Нас рекомендуют
+								a.back-link(href="#")
+									svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+										use(xlink:href="#arrow-left")
+									span Назад
+							.bottom
+								.mobile-scroll
+									ul.mobile-scroll-container
+										li.mobile-scroll-elem
+											a(href="/about.html") Компания «ТЭККС»
+										li.mobile-scroll-elem
+											a(href="/about_adv.html") Преимущества
+										li.mobile-scroll-elem
+											a(href="/about_partner.html") Партнерская сеть
+										li.active.mobile-scroll-elem
+											a(href="/about_recommend.html") Нас рекомендуют
+										li.mobile-scroll-elem
+											a(href="/about_license.html") Сертификаты, лицензии
+										li.mobile-scroll-elem
+											a(href="/about_contact.html") Напишите нам
 						.page-nav
 							a.back-link(href="#")
 								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
@@ -88,6 +95,8 @@ html
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
 		script(src="https://use.fontawesome.com/856283dff2.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
+		script(src="js/hammer.js")
+		script(src="js/jquery.hammer.js")
 		script(src="js/bootstrap.min.js")
 		script(src="js/owl.carousel.min.js")
 		script(src="js/jquery.mCustomScrollbar.concat.min.js")

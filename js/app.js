@@ -9,64 +9,66 @@ doc.ready(function(){
 		menuSetData();
 	})
 	//sliders
-	$('.owl-carousel').each(function(){
-		var slider = $(this);
-		$(this).on('initialized.owl.carousel', function(e){
-			var length;
-			var current;
-			if (e.item.count < 10){
-				length = '0'+e.item.count;
-			} else {
-				length = e.item.count;
-			}
-			if (e.item.index+1 < 10){
-				current = '0'+parseInt(e.item.index+1);
-			} else {
-				current = e.item.index+1;
-			}
-			sliderUpdate($(this), length, current);
-		})
+	if ($('.main-slider').length){	
+		$('.owl-carousel').each(function(){
+			var slider = $(this);
+			$(this).on('initialized.owl.carousel', function(e){
+				var length;
+				var current;
+				if (e.item.count < 10){
+					length = '0'+e.item.count;
+				} else {
+					length = e.item.count;
+				}
+				if (e.item.index+1 < 10){
+					current = '0'+parseInt(e.item.index+1);
+				} else {
+					current = e.item.index+1;
+				}
+				sliderUpdate($(this), length, current);
+			})
 
-		$(this).owlCarousel({
+			$(this).owlCarousel({
+				margin: 0,
+				items: 1,
+				dots: false
+			});
+
+			$(this).on('translated.owl.carousel', function(e){
+				var current;
+				var length;
+				if (e.item.count < 10){
+					length = '0'+e.item.count;
+				} else {
+					length = e.item.count;
+				}
+				if (e.item.index+1 < 10){
+					current = '0'+parseInt(e.item.index+1);
+				} else {
+					current = e.item.index+1;
+				}
+				sliderUpdate($(this), length, current);
+
+			});
+
+			$(this).parent().find('.arrow').click(function(){
+				if ($(this).hasClass('next')){
+					slider.trigger('next.owl.carousel');
+				} else {
+					slider.trigger('prev.owl.carousel');
+				}
+				return false;
+			});
+
+		});
+	}
+
+	if ($('.red-slider').length){
+
+		var adv = $('.red-slider').owlCarousel({
 			margin: 0,
 			items: 1,
-			dots: false
-		});
-
-		$(this).on('translated.owl.carousel', function(e){
-			var current;
-			var length;
-			if (e.item.count < 10){
-				length = '0'+e.item.count;
-			} else {
-				length = e.item.count;
-			}
-			if (e.item.index+1 < 10){
-				current = '0'+parseInt(e.item.index+1);
-			} else {
-				current = e.item.index+1;
-			}
-			sliderUpdate($(this), length, current);
-
-		});
-
-		$(this).parent().find('.arrow').click(function(){
-			if ($(this).hasClass('next')){
-				slider.trigger('next.owl.carousel');
-			} else {
-				slider.trigger('prev.owl.carousel');
-			}
-			return false;
-		});
-
-	});
-
-	if ($('.adv-slider').length){
-
-		var adv = $('.adv-slider').owlCarousel({
-			margin: 0,
-			items: 1,
-			dotsContainer: '.owl-dots',
+			dots: true,
 			nav: false
 		});
 
@@ -235,7 +237,8 @@ doc.ready(function(){
 		options = {
 			chart: {
 				renderTo: 'chart',
-				type: 'line'
+				type: 'line',
+				backgroundColor: '#F8F8F8'
 			},
 			title: {
 				text: ""
@@ -429,11 +432,12 @@ doc.ready(function(){
 
 
 	if ($('.partner-map').length){
-
-		partner_map_size();
-		$(window).resize(function(){
+		if ($(window).width() > 1025){
 			partner_map_size();
-		});
+			$(window).resize(function(){
+				partner_map_size();
+			});
+		}
 
 		var areas = [
 			{countryId: "RU-AD", text: "Адыгейская область"},
@@ -657,6 +661,9 @@ doc.ready(function(){
 	$('.switcher-tabs a').click(function(e){
 		if (!$(this).parent().hasClass('active')){
 			$('.switcher').toggleClass('right');
+			if ($(window).width() < 560){
+				mobileScroll();
+			}
 		}
 	});
 
@@ -833,7 +840,20 @@ doc.ready(function(){
 		$(window).resize(function(){
 			mobileScroll();
 		});
-	}
+	} 
+
+	// $(window).resize(function(){
+	// 	if ($('.car-block').length && $(window).width() < 1650){
+	// 		mobileScroll();
+	// 	} else {
+	// 		$('.mobile-scroll').each(function(){
+	// 			$(this).css({
+	// 				width: 'auto',
+	// 				transform: 'translateX(0px)'
+	// 			});
+	// 		})
+	// 	}
+	// })
 
 });
 
@@ -846,27 +866,27 @@ function mobileScroll(){
 		var width = 0;
 		var stop_parametre = 0;
 		elems.each(function(){
-			console.log($(this))
 			width = width + $(this).outerWidth(true)+10;
-			console.log("width", width);
 			stop_parametre = stop_parametre + ($(this).outerWidth(true)+10);
 		});
+
 		$(this).width(width);
 		var move;
 		var stop = stop_parametre - $(this).parent().width();
 		var move_start;
 
 		if ($(this).width() > $(window).width()){
+
 			$(this).hammer().bind('panstart', function(e){
 				var matrix = $(this).css('transform');
-				console.log("matrix", matrix);
 				matrix = matrix.split('(')[1];
 				matrix = matrix.split(')')[0];
 				matrix = matrix.split(',');
 				matrix = matrix[4];
 				move_start = parseInt(matrix, 10);
 				move_start = Math.abs(move_start);
-			})
+			});
+
 			$(this).hammer().bind("pan", function(ev){
 				var move_count = ev.gesture.deltaX * (-1);
 				move = move_start + move_count;
@@ -877,6 +897,7 @@ function mobileScroll(){
 				}
 			});
 		}
+
 	});
 }
 

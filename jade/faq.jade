@@ -25,14 +25,21 @@ html
 							use(xlink:href="#arrow-left")
 					.navigation-bar
 						.section-nav
-							.side-title Вопрос–ответ
-							ul
-								li
-									a(href="/about.html") Мониторинг
-								li
-									a(href="/about_adv.html") Оборудование
-								li.active
-									a(href="/about_partner.html") Общие вопросы
+							.top
+								.side-title Вопрос–ответ
+								a.back-link(href="#")
+									svg(viewBox="0 0 100 100", class="svgico arrow-icon")
+										use(xlink:href="#arrow-left")
+									span Назад
+							.bottom
+								.mobile-scroll
+									ul.mobile-scroll-container
+										li.mobile-scroll-elem
+											a(href="") Мониторинг
+										li.mobile-scroll-elem
+											a(href="") Оборудование
+										li.active.mobile-scroll-elem
+											a(href="") Общие вопросы
 						.page-nav
 							a.back-link(href="#")
 								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
@@ -40,11 +47,11 @@ html
 								span Назад
 							ul
 								li
-									a(href="#mission") Мониторинг
+									a(href="") Мониторинг
 								li
-									a(href="#team") Оборудование
+									a(href="") Оборудование
 								li.active
-									a(href="#exp") Общие вопросы
+									a(href="") Общие вопросы
 					.scrolled-content
 						section
 							h2 Общие вопросы
