@@ -46,69 +46,70 @@ html
 								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
 									use(xlink:href="#arrow-left")
 								span Назад
-					.scrolled-content
-						section.calc
-							h2 Калькулятор эффективности
-							.calc-sliders
-								.calc-row
-									.row-item
-										.name Количество единиц автотранспорта
-									.row-item
-										input(type="text")#amount
-									.row-item
-										.value
-								.calc-row
-									.row-item
-										.name Средний пробег ТС в месяц
-									.row-item
-										input(type="text")#run
-									.row-item
-										.value
-								.calc-row
-									.row-item
-										.name Стоимость литра бензина для вашей компании
-									.row-item
-										input(type="text")#cost
-									.row-item
-										.value
-								.calc-row
-									.row-item
-										.name Средний расход топлива
-									.row-item
-										input(type="text")#drain
-									.row-item
-										.value
-							.calc-economy
-								.item
-									span Экономия из приписанных пробегов составит:
-									.value#run_economy
-								.item
-									span Экономия на контроле расхода топлива ТС:
-									.value#sell_economy
-								.item
-									span Экономия за счет оптимизации маршрутов:
-									.value#opti_economy
-							.calc-all
-								.calc-text
-									span Итоговая экономия со всего автопарка
-								.value#all_economy
-						section
-							h2 График окупаемости
-							.chart-block
-								#chart
-							.calc-economy
-								.item
-									span Вложения разовые
-									.value#once_budget
-								.item
-									span Вложения ежемесячные
-									.value#every_month_budget
-								.item
-									span Примерный срок окупаемости
-									.value#payback
-						section
-							.end-block
-								h2 Начните свой проект с нами уже сегодня!
+					.scrolled
+						.scrolled-content
+							section.calc
+								h2 Калькулятор эффективности
+								.calc-sliders
+									.calc-row
+										.row-item
+											.name Количество единиц автотранспорта
+										.row-item
+											input(type="text")#amount
+										.row-item
+											.value
+									.calc-row
+										.row-item
+											.name Средний пробег ТС в месяц
+										.row-item
+											input(type="text")#run
+										.row-item
+											.value
+									.calc-row
+										.row-item
+											.name Стоимость литра бензина для вашей компании
+										.row-item
+											input(type="text")#cost
+										.row-item
+											.value
+									.calc-row
+										.row-item
+											.name Средний расход топлива
+										.row-item
+											input(type="text")#drain
+										.row-item
+											.value
+								.calc-economy
+									.item
+										span Экономия из приписанных пробегов составит:
+										.value#run_economy
+									.item
+										span Экономия на контроле расхода топлива ТС:
+										.value#sell_economy
+									.item
+										span Экономия за счет оптимизации маршрутов:
+										.value#opti_economy
+								.calc-all
+									.calc-text
+										span Итоговая экономия со всего автопарка
+									.value#all_economy
+							section
+								h2 График окупаемости
+								.chart-block
+									#chart
+								.calc-economy
+									.item
+										span Вложения разовые
+										.value#once_budget
+									.item
+										span Вложения ежемесячные
+										.value#every_month_budget
+									.item
+										span Примерный срок окупаемости
+										.value#payback
+							section
+								.end-block
+									h2 Начните свой проект с нами уже сегодня!
 				.feedback
 					.name Обратная связь
 					a(href="").link.next-main-link
@@ -130,6 +131,8 @@ html
 		script(src="js/hammer.js")
 		script(src="js/jquery.hammer.js")
 		script(src="js/jquery.mCustomScrollbar.concat.min.js")
+		script(src="js/iscroll.js")
+		script(src="js/iscroll-probe.js")
 		script(src="js/ion.rangeSlider.min.js")
 		//- script(src="https://www.gstatic.com/charts/loader.js")
 		script(src="https://code.highcharts.com/highcharts.js")

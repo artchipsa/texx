@@ -51,21 +51,22 @@ html
 								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
 									use(xlink:href="#arrow-left")
 								span Назад
-					.scrolled-content
-						section
-							.contacts-block
-								h2 Напишите нам
-								form
-									.form-group
-										input.required(type="text", name="", placeholder="Контактное лицо *")
-									.form-group
-										input.required(type="text", name="", placeholder="Телефон *")
-									.form-group
-										input(type="text", name="", placeholder="Электронная почта")
-									.form-group
-										textarea(name="", placeholder="Текст вопроса")
-									.form-group
-										input.btn.default(type="submit", value="Отправить")
+					.scrolled
+						.scrolled-content
+							section
+								.contacts-block
+									h2 Напишите нам
+									form
+										.form-group
+											input.required(type="text", name="", placeholder="Контактное лицо *")
+										.form-group
+											input.required(type="text", name="", placeholder="Телефон *")
+										.form-group
+											input(type="text", name="", placeholder="Электронная почта")
+										.form-group
+											textarea(name="", placeholder="Текст вопроса")
+										.form-group
+											input.btn.default(type="submit", value="Отправить")
 
 
 							
@@ -92,6 +93,8 @@ html
 		script(src="js/bootstrap.min.js")
 		script(src="js/hammer.js")
 		script(src="js/jquery.hammer.js")
+		script(src="js/iscroll.js")
+		script(src="js/iscroll-probe.js")
 		script(src="js/owl.carousel.min.js")
 		script(src="js/jquery.mCustomScrollbar.concat.min.js")
 		script(src="js/app.js")

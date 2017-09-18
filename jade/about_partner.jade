@@ -51,35 +51,49 @@ html
 								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
 									use(xlink:href="#arrow-left")
 								span Назад
-					.scrolled-content
-						section
-							h2 Партнерская сеть
-							.partner-map
-								include ../img/map_svg.svg
-							.mobile-partner-form
-								form
-									input(type="hidden", name="area")
-									.form-group
-										select.custom_select
-											option(value="") Красноярский край
-											option(value="") Тульская область
-											option(value="") Тюмень
-									.form-group
-										input(type="text", name="", placeholder="Отдел")
-									.form-group
-										input(type="text", name="", placeholder="Наименование организации")
-									.form-group
-										input.required(type="text", name="", placeholder="Контактное лицо *")
-									.form-group
-										input.required(type="text", name="", placeholder="Телефон *")
-									.form-group
-										input(type="text", name="", placeholder="Электронная почта")
-									.form-group
-										input.btn.default(type="submit", value="Отправить")
+					.scrolled
+						.scrolled-content
+							section
+								h2 Партнерская сеть
+								.partner-map
+									include ../img/map_svg.svg
+								.mobile-partner-form
+									form
+										input(type="hidden", name="area")
+										.form-group
+											select.custom_select
+												option(value="") Красноярский край
+												option(value="") Тульская область
+												option(value="") Тюмень
+												option(value="") Тульская область
+												option(value="") Тюмень
+												option(value="") Красноярский край
+												option(value="") Тульская область
+												option(value="") Тюмень
+												option(value="") Тульская область
+												option(value="") Тюмень
+												option(value="") Красноярский край
+												option(value="") Тульская область
+												option(value="") Тюмень
+												option(value="") Тульская область
+												option(value="") Тюмень
+
+										.form-group
+											input(type="text", name="", placeholder="Отдел")
+										.form-group
+											input(type="text", name="", placeholder="Наименование организации")
+										.form-group
+											input.required(type="text", name="", placeholder="Контактное лицо *")
+										.form-group
+											input.required(type="text", name="", placeholder="Телефон *")
+										.form-group
+											input(type="text", name="", placeholder="Электронная почта")
+										.form-group
+											input.btn.default(type="submit", value="Отправить")
 				.modal-container
 					.modal-content
 						a(href="#").close-modal
-							img(src="../img/modal_close.svg", alt="")
+							img(src=" img/modal_close.svg", alt="")
 						.row.col-container
 							.col-lg-3.col-md-3.col-container
 								.slide-sidebar
@@ -124,5 +138,7 @@ html
 		script(src="js/jquery.hammer.js")
 		script(src="js/bootstrap.min.js")
 		script(src="js/owl.carousel.min.js")
+		script(src="js/iscroll.js")
+		script(src="js/iscroll-probe.js")
 		script(src="js/jquery.mCustomScrollbar.concat.min.js")
 		script(src="js/app.js")

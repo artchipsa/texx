@@ -75,93 +75,95 @@
                   <use xlink:href="#arrow-left"></use>
                 </svg><span>Назад</span></a></div>
           </div>
-          <div class="scrolled-content">
-            <section class="calc">
-              <h2>Калькулятор эффективности</h2>
-              <div class="calc-sliders">
-                <div class="calc-row">
-                  <div class="row-item">
-                    <div class="name">Количество единиц автотранспорта</div>
+          <div class="scrolled">
+            <div class="scrolled-content">
+              <section class="calc">
+                <h2>Калькулятор эффективности</h2>
+                <div class="calc-sliders">
+                  <div class="calc-row">
+                    <div class="row-item">
+                      <div class="name">Количество единиц автотранспорта</div>
+                    </div>
+                    <div class="row-item">
+                      <input type="text" id="amount">
+                    </div>
+                    <div class="row-item">
+                      <div class="value"></div>
+                    </div>
                   </div>
-                  <div class="row-item">
-                    <input type="text" id="amount">
+                  <div class="calc-row">
+                    <div class="row-item">
+                      <div class="name">Средний пробег ТС в месяц</div>
+                    </div>
+                    <div class="row-item">
+                      <input type="text" id="run">
+                    </div>
+                    <div class="row-item">
+                      <div class="value"></div>
+                    </div>
                   </div>
-                  <div class="row-item">
-                    <div class="value"></div>
+                  <div class="calc-row">
+                    <div class="row-item">
+                      <div class="name">Стоимость литра бензина для вашей компании</div>
+                    </div>
+                    <div class="row-item">
+                      <input type="text" id="cost">
+                    </div>
+                    <div class="row-item">
+                      <div class="value"></div>
+                    </div>
+                  </div>
+                  <div class="calc-row">
+                    <div class="row-item">
+                      <div class="name">Средний расход топлива</div>
+                    </div>
+                    <div class="row-item">
+                      <input type="text" id="drain">
+                    </div>
+                    <div class="row-item">
+                      <div class="value"></div>
+                    </div>
                   </div>
                 </div>
-                <div class="calc-row">
-                  <div class="row-item">
-                    <div class="name">Средний пробег ТС в месяц</div>
+                <div class="calc-economy">
+                  <div class="item"><span>Экономия из приписанных пробегов составит:</span>
+                    <div id="run_economy" class="value"></div>
                   </div>
-                  <div class="row-item">
-                    <input type="text" id="run">
+                  <div class="item"><span>Экономия на контроле расхода топлива ТС:</span>
+                    <div id="sell_economy" class="value"></div>
                   </div>
-                  <div class="row-item">
-                    <div class="value"></div>
-                  </div>
-                </div>
-                <div class="calc-row">
-                  <div class="row-item">
-                    <div class="name">Стоимость литра бензина для вашей компании</div>
-                  </div>
-                  <div class="row-item">
-                    <input type="text" id="cost">
-                  </div>
-                  <div class="row-item">
-                    <div class="value"></div>
+                  <div class="item"><span>Экономия за счет оптимизации маршрутов:</span>
+                    <div id="opti_economy" class="value"></div>
                   </div>
                 </div>
-                <div class="calc-row">
-                  <div class="row-item">
-                    <div class="name">Средний расход топлива</div>
+                <div class="calc-all">
+                  <div class="calc-text"><span>Итоговая экономия со всего автопарка</span></div>
+                  <div id="all_economy" class="value"></div>
+                </div>
+              </section>
+              <section>
+                <h2>График окупаемости</h2>
+                <div class="chart-block">
+                  <div id="chart"></div>
+                </div>
+                <div class="calc-economy">
+                  <div class="item"><span>Вложения разовые</span>
+                    <div id="once_budget" class="value"></div>
                   </div>
-                  <div class="row-item">
-                    <input type="text" id="drain">
+                  <div class="item"><span>Вложения ежемесячные</span>
+                    <div id="every_month_budget" class="value"></div>
                   </div>
-                  <div class="row-item">
-                    <div class="value"></div>
+                  <div class="item"><span>Примерный срок окупаемости</span>
+                    <div id="payback" class="value"></div>
                   </div>
                 </div>
-              </div>
-              <div class="calc-economy">
-                <div class="item"><span>Экономия из приписанных пробегов составит:</span>
-                  <div id="run_economy" class="value"></div>
+              </section>
+              <section>
+                <div class="end-block">
+                  <h2>Начните свой проект с нами уже сегодня!</h2>
                 </div>
-                <div class="item"><span>Экономия на контроле расхода топлива ТС:</span>
-                  <div id="sell_economy" class="value"></div>
-                </div>
-                <div class="item"><span>Экономия за счет оптимизации маршрутов:</span>
-                  <div id="opti_economy" class="value"></div>
-                </div>
-              </div>
-              <div class="calc-all">
-                <div class="calc-text"><span>Итоговая экономия со всего автопарка</span></div>
-                <div id="all_economy" class="value"></div>
-              </div>
-            </section>
-            <section>
-              <h2>График окупаемости</h2>
-              <div class="chart-block">
-                <div id="chart"></div>
-              </div>
-              <div class="calc-economy">
-                <div class="item"><span>Вложения разовые</span>
-                  <div id="once_budget" class="value"></div>
-                </div>
-                <div class="item"><span>Вложения ежемесячные</span>
-                  <div id="every_month_budget" class="value"></div>
-                </div>
-                <div class="item"><span>Примерный срок окупаемости</span>
-                  <div id="payback" class="value"></div>
-                </div>
-              </div>
-            </section>
-            <section>
-              <div class="end-block">
-                <h2>Начните свой проект с нами уже сегодня!</h2>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
         </div>
         <div class="feedback">
@@ -172,7 +174,7 @@
           <div class="helper-ui-text">нажмите на кнопку</div>
         </div>
         <div id="bottom_modal" class="modal-container">
-          <div class="modal-content"><a href="#" class="close-modal"><img src="../img/modal_close.svg" alt=""></a>
+          <div class="modal-content"><a href="#" class="close-modal"><img src=" img/modal_close.svg" alt=""></a>
             <div class="row col-container">
               <div class="col-lg-3 col-md-3 col-container">
                 <div class="slide-sidebar">
@@ -215,6 +217,8 @@
     <script src="js/hammer.js"></script>
     <script src="js/jquery.hammer.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/iscroll-probe.js"></script>
     <script src="js/ion.rangeSlider.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="js/app.js"></script>

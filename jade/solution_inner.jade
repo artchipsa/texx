@@ -32,70 +32,71 @@ html
 								svg(viewBox="0 0 100 100", class="svgico arrow-icon")
 									use(xlink:href="#arrow-left")
 								span Назад
-					.scrolled-content
-						section
-							h2 Мониторинг в сельском хозяйстве
-							p Мы обеспечиваем информацией, необходимой для эффективного управления автопарками в любой точке России и ближнего зарубежья. Мы помогаем экономить время и деньги! Содействуем процветанию и прогрессу Вашего бизнеса, позволяя добиться наиболее оптимального использования машин, механизмов и потребляемого ими топлива.
-							.table-header Доступные комплектации
-							table
-								tr
-									th Цена от 42 000 руб.
-									th
-										a.modal-handler(href="#buy_solution") Купить
-								tr
-									td ABK
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Вкл.–Выкл. световых приборов
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Голосовая связь
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Датчик оборотов ДВС
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Датчик уровня топлива Omnicomm LLS
-									td 2
-								tr
-									td Информация по местоположению, треку, пробегу
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Использование данных с CAN-шины
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Открытия–закрытия дверей
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Подключение работы отопителя
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Работа навесного оборудования
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Температура двигателя
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Терминал
-									td optim
-								tr
-									td Тревожная кнопка
-									td 
-										i.fa.fa-check(aria-hidden="true")
-								tr
-									td Идентефикация водителей
-									td нет
-							a.btn.default.modal-handler(href="#solution_consult") Получить консультацию
+					.scrolled
+						.scrolled-content
+							section
+								h2 Мониторинг в сельском хозяйстве
+								p Мы обеспечиваем информацией, необходимой для эффективного управления автопарками в любой точке России и ближнего зарубежья. Мы помогаем экономить время и деньги! Содействуем процветанию и прогрессу Вашего бизнеса, позволяя добиться наиболее оптимального использования машин, механизмов и потребляемого ими топлива.
+								.table-header Доступные комплектации
+								table
+									tr
+										th Цена от 42 000 руб.
+										th
+											a.modal-handler(href="#buy_solution") Купить
+									tr
+										td ABK
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Вкл.–Выкл. световых приборов
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Голосовая связь
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Датчик оборотов ДВС
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Датчик уровня топлива Omnicomm LLS
+										td 2
+									tr
+										td Информация по местоположению, треку, пробегу
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Использование данных с CAN-шины
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Открытия–закрытия дверей
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Подключение работы отопителя
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Работа навесного оборудования
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Температура двигателя
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Терминал
+										td optim
+									tr
+										td Тревожная кнопка
+										td 
+											i.fa.fa-check(aria-hidden="true")
+									tr
+										td Идентефикация водителей
+										td нет
+								a.btn.default.modal-handler(href="#solution_consult") Получить консультацию
 				.modal-container#buy_solution
 					.modal-content
 						a(href="#").close-modal
@@ -166,5 +167,7 @@ html
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js")
 		script(src="js/bootstrap.min.js")
 		script(src="js/owl.carousel.min.js")
+		script(src="js/iscroll.js")
+		script(src="js/iscroll-probe.js")
 		script(src="js/jquery.mCustomScrollbar.concat.min.js")
 		script(src="js/app.js")
