@@ -740,7 +740,7 @@ doc.ready(function(){
 		}
 	});
 
-	doc.on('click', '.point:visible', function(){
+	doc.on('click', '.tab-pane.active .point', function(){
 		console.log(1);
 		var id = $(this).attr('id');
 		var selfcost = $(this).data('selfcost');
@@ -784,7 +784,7 @@ doc.ready(function(){
 		}
 	});
 
-	doc.on('click', '.piece:visible', function(e){
+	doc.on('click', '.tab-pane.active .piece', function(e){
 		e.preventDefault();
 		var id = $(this).data('id');
 		var selfcost = $('#'+id).data('selfcost');
