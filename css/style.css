@@ -22,6 +22,18 @@
   src: url('../fonts/ProximaNovaSemibold.woff2') format('woff2'), url('../fonts/ProximaNovaSemibold.woff') format('woff');
   font-weight: 600;
 }
+@font-face {
+  font-family: Mono;
+  src: url('../fonts/PTMonoRegular.otf');
+  src: url('../fonts/PTMonoRegular.woff2') format('woff2'), url('../fonts/PTMonoRegular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Mono;
+  src: url('../fonts/PTMonoBold.otf');
+  src: url('../fonts/PTMonoBold.woff2') format('woff2'), url('../fonts/PTMonoBold.woff') format('woff');
+  font-weight: 800;
+}
 .vcenter {
   display: inline-block;
   vertical-align: middle;
@@ -235,6 +247,7 @@ header .user img:last-child {
   bottom: 20%;
   right: 17%;
   z-index: 2;
+  font-family: Mono;
 }
 .main-slider .abs-container {
   position: absolute;
@@ -618,6 +631,7 @@ header .user img:last-child {
   bottom: 0px;
   right: 0px;
   z-index: 2;
+  font-family: Mono;
 }
 .fullscreen .slide-content .fixed-slider-counter .slider-current,
 .fullscreen .slide-content .fixed-slider-counter .slider-length {
@@ -2575,7 +2589,7 @@ form .form-group .btn {
     padding: 2% 7%;
   }
 }
-@media (max-width: 1367px) {
+@media (max-width: 1445px) {
   body {
     font-size: 16px;
   }

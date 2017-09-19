@@ -6,6 +6,9 @@
 .font(Nova, ProximaNovaLight, 200);
 .font(Nova, ProximaNovaBold, 800);
 .font(Nova, ProximaNovaSemibold, 600);
+.font(Mono, PTMonoRegular, 400);
+.font(Mono, PTMonoBold, 800);
+
 
 .vcenter {
   display: inline-block;
@@ -235,6 +238,7 @@ header{
 		bottom: 20%;
 		right: 17%;
 		z-index: 2;
+		font-family: Mono;
 	}
 	.abs-container{
 		position: absolute;
@@ -645,6 +649,7 @@ header{
 			bottom: 0px;
 			right: 0px;
 			z-index: 2;
+			font-family: Mono;
 			.slider-current, .slider-length{
 				color: @black;
 				&:before{
@@ -2706,7 +2711,7 @@ form .form-group .btn{
 		padding: 2% 7%;
 	}
 }
-@media (max-width: 1367px){
+@media (max-width: 1445px){
 	body{
 		font-size: 16px;
 	}
