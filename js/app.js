@@ -741,6 +741,7 @@ doc.ready(function(){
 	});
 
 	doc.on('click', '.point:visible', function(){
+		console.log(1);
 		var id = $(this).attr('id');
 		var selfcost = $(this).data('selfcost');
 		var mountcost = $(this).data('mountcost');
