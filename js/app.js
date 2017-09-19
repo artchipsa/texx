@@ -74,12 +74,12 @@ doc.ready(function(){
 
 	}
 
+	var scrolled;
+
 	if ($('.scrolled-content').length){
 		var down_int;
 		var up_int;
-		var scrolled;
-
-		if ($('.tab-pane').length){
+		if ($('.tab-pane .scrolled-content').length){
 			scrolled = scrollInit('.tab-pane.active .scrolled');
 		} else {
 			scrolled = scrollInit('.scrolled');
@@ -95,6 +95,11 @@ doc.ready(function(){
 
 		$('.tabs li').click(function(){
 			scrolled.destroy();
+
+			setTimeout(function(){
+				scrolled.refresh();
+			}, 200)
+
 			setTimeout(function(){
 				scrolled = scrollInit('.tab-pane.active .scrolled');
 				scrolled.refresh();
@@ -675,6 +680,9 @@ doc.ready(function(){
 		e.preventDefault();
 		$(this).find('.faq-circle').toggleClass('active')
 		$(this).next().slideToggle();
+		setTimeout(function(){
+			scrolled.refresh();
+		}, 350)
 	});
 
 

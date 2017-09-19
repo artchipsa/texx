@@ -1378,6 +1378,7 @@ section.article-wrapper .fullhalf-block h1 {
 .main-content.inner .navigation-bar .page-nav ul {
   list-style: none;
   padding: 0px;
+  margin-bottom: 0px;
 }
 .main-content.inner .navigation-bar .page-nav ul li {
   margin-bottom: 15px;
@@ -2501,7 +2502,7 @@ section.article-wrapper .fullhalf-block h1 {
   width: 14px;
   height: 29px;
   position: absolute;
-  top: 50%;
+  top: 52%;
   right: 25px;
   transform: translateY(-50%);
   cursor: pointer;
@@ -2522,6 +2523,8 @@ section.article-wrapper .fullhalf-block h1 {
   transition: all .35s;
   pointer-events: none;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .left-menu .link-block ul {
   list-style: none;
@@ -2530,7 +2533,6 @@ section.article-wrapper .fullhalf-block h1 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100%;
   padding: 0px 70px 0px 20px;
 }
 .left-menu .link-block ul li {
