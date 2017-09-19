@@ -1332,6 +1332,7 @@ section.article-wrapper .fullhalf-block h1 {
 }
 .main-content.inner .navigation-bar {
   width: 45%;
+  height: 100%;
   padding: 3% 7%;
   display: flex;
 }
@@ -1395,6 +1396,7 @@ section.article-wrapper .fullhalf-block h1 {
 }
 .main-content.inner .scrolled {
   width: 55%;
+  height: 100%;
 }
 .main-content.inner .scrolled-content {
   width: 100%;
@@ -2859,6 +2861,10 @@ form .form-group .btn {
   }
 }
 @media (max-width: 1025px) {
+  .article-wrapper .fullhalf-block .h2,
+  .article-wrapper .fullhalf-block h1 {
+    font-size: 3.3vw;
+  }
   header .menu .navbar {
     padding-left: 0px;
   }
