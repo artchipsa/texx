@@ -1938,16 +1938,13 @@ section.article-wrapper .fullhalf-block h1 {
   align-items: center;
   padding: 3% 0px!important;
 }
-/* .cost{
-	.article-wrapper{
-		.scrolled{
-			.scrolled-content{
-				padding: 0%;
-				min-height: 100%;
-			}
-		}
-	}
-} */
+.cost .article-wrapper .scrolled .scrolled-content {
+  padding: 0%;
+  height: 100%;
+}
+.cost .article-wrapper .scrolled .scrolled-content .info-oversize {
+  height: 20%;
+}
 .article-wrapper .scrolled .scrolled-content {
   padding: 5.5% 0%;
   min-height: 100%;
@@ -2617,6 +2614,12 @@ form .form-group .btn {
   }
   header .more .dropdown {
     min-width: 840px;
+  }
+  .cost .article-wrapper .scrolled .scrolled-content .info-oversize {
+    height: 150px;
+  }
+  .cost .article-wrapper .scrolled .scrolled-content {
+    height: auto;
   }
 }
 @media (max-width: 1445px) {

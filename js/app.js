@@ -311,8 +311,6 @@ doc.ready(function(){
 
 	$(window).resize(function(){
 		var nw = $(window).width();
-		var translate = $('.main-container').css('transform').split(/[()]/)[1]; // читаем смещение 
-		var posy = translate.split(',')[5]; // смещение наверх
 		var nh = $('.fullscreen.active').outerHeight(true);
 		var id = $('.fullscreen.active').index();
 		var new_posy = -($('.main-container .first').height() + (nh*(id-1)));
