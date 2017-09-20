@@ -250,12 +250,15 @@ doc.ready(function(){
 
 
 	// main логика листания главной страницы нажатик на кнопку. 
+
 	doc.on('click', '.next-main-link', function(e){
 		e.preventDefault();
-		var translate = $('.main-container').css('transform').split(/[()]/)[1];
-		var posy = translate.split(',')[5];
-		var main = $('.main-content');
-		var _this = $(this);
+
+		var main = $('.main-content'); // сохраняем контейнер в переменную
+		var translate = $('.main-container').css('transform').split(/[()]/)[1]; // читаем смещение 
+		var posy = translate.split(',')[5]; // смещение наверх
+		var _this = $(this); // сохроняем ссылку 
+
 		if (_this.index($('.next-main-link')) == 0){
 			main.addClass('active');
 			posy = -(parseInt(posy) + parseInt($(_this).parents('section').height()));
@@ -263,7 +266,10 @@ doc.ready(function(){
 				$('.main-container').css('transform',  "translateY(" +posy+ "px)")
 			}, 250);
 			_this.removeClass('active')
+			$('.main-container section').removeClass('active');
+			$(_this).parents('section').next().addClass('active');
 			_this.parents('section').next('section').find('.next-main-link').addClass('active');
+			// далее проверяем не последний ли это элемент, так как последний должен позвращать нас в начало
 		} else if ($('.next-main-link').index(_this)+1 == $('.next-main-link').length){
 			posy = 0;
 			$('.main-container').css('transform',  "translateY(" + posy+ "px)")
@@ -276,15 +282,34 @@ doc.ready(function(){
 			posy = (parseInt(posy) - parseInt($(_this).parents('section').height()));
 			$('.main-container').css('transform',  "translateY(" + posy+ "px)")
 			_this.removeClass('active');
+			$('.main-container section').removeClass('active');
+			$(_this).parents('section').next().addClass('active');
 			_this.parents('section').next('section').find('.next-main-link').addClass('active');
 		}
 	});
+
+	var w = $(window).width();
+	var h = $('.fullscreen').height();
+
+	$(window).resize(function(){
+		var nw = $(window).width();
+		var translate = $('.main-container').css('transform').split(/[()]/)[1]; // читаем смещение 
+		var posy = translate.split(',')[5]; // смещение наверх
+		var nh = $('.fullscreen.active').outerHeight(true);
+		var id = $('.fullscreen.active').index();
+		var new_posy = -($('.main-container .first').height() + (nh*(id-1)));
+		if ($('.main-content.active').length){
+			$('.main-container').css('transform',  "translateY(" +new_posy+ "px)")
+		}
+		w = nw;
+		h = nh;
+	})
+
 
 	$('.custom_select').select2({
 		dropdownAutoWidth : true,
     	width: 'auto'
 	});
-
 
 	if ($('.calc-sliders').length){
 

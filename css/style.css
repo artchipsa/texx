@@ -2506,24 +2506,23 @@ section.article-wrapper .fullhalf-block h1 {
   pointer-events: all;
 }
 .left-menu .icon {
-  width: 14px;
-  height: 29px;
+  /* width: 14px;
+		height: 29px; */
   position: absolute;
   top: 52%;
   right: 25px;
   transform: translateY(-50%);
   cursor: pointer;
-}
-.left-menu .icon:before,
-.left-menu .icon:after {
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  background-color: #D8D8D8;
-}
-.left-menu .icon:after {
-  right: 0px;
+  /* &:before, &:after{
+			content: '';
+			position: absolute;
+			width: 4px;
+			height: 100%;
+			background-color: #D8D8D8;
+		}
+		&:after{
+			right: 0px;
+		} */
 }
 .left-menu .link-block {
   opacity: 0;
