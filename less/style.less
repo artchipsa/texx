@@ -784,6 +784,7 @@ form{
 	}
 	.form-group{
 		margin-bottom: 35px;
+		position: relative;
 		&:last-child{
 			margin-bottom: 0px;
 		}
@@ -795,7 +796,17 @@ form{
 			font-size: 20px;
 			font-weight: 800;
 			padding-bottom: 20px;
+			position: relative;
 			background-color: transparent;
+			&.required{
+				+ label {
+					position: absolute;
+					top: -5px;
+					left: -8px;
+					color: @red;
+					font-size: 16px;
+				}
+			}
 			&.error{
 				border-bottom-color: @red;
 			}
@@ -1038,7 +1049,20 @@ form{
 		font-size: 18px;
 		font-weight: 600;
 		color: @red;
+		display: block;
 		.views{
+			display: inline-block;
+			margin-right: 10px;
+			color: @black;
+			opacity: 0.45;
+			.fa{
+				margin-right: 5px;
+			}
+		}
+		.clock{
+			display: inline-block;
+			color: @black;
+			opacity: 0.35;
 			.fa{
 				margin-right: 5px;
 			}

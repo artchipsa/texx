@@ -773,6 +773,7 @@ form .cost-block .form-group.three {
 }
 form .form-group {
   margin-bottom: 35px;
+  position: relative;
 }
 form .form-group:last-child {
   margin-bottom: 0px;
@@ -787,7 +788,17 @@ form .form-group textarea {
   font-size: 20px;
   font-weight: 800;
   padding-bottom: 20px;
+  position: relative;
   background-color: transparent;
+}
+form .form-group input.required + label,
+form .form-group select.required + label,
+form .form-group textarea.required + label {
+  position: absolute;
+  top: -5px;
+  left: -8px;
+  color: #E5002E;
+  font-size: 16px;
 }
 form .form-group input.error,
 form .form-group select.error,
@@ -1047,8 +1058,23 @@ form .form-group .btn:focus {
   font-size: 18px;
   font-weight: 600;
   color: #E5002E;
+  display: block;
+}
+.article-wrapper .time .views {
+  display: inline-block;
+  margin-right: 10px;
+  color: #2F2F2F;
+  opacity: 0.45;
 }
 .article-wrapper .time .views .fa {
+  margin-right: 5px;
+}
+.article-wrapper .time .clock {
+  display: inline-block;
+  color: #2F2F2F;
+  opacity: 0.35;
+}
+.article-wrapper .time .clock .fa {
   margin-right: 5px;
 }
 .article-wrapper .fullhalf-block {
