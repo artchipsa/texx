@@ -4266,6 +4266,9 @@ form .form-group .btn {
   .contacts-group .contacts-content {
     font-size: 15px;
   }
+  .contacts-col {
+    width: 75%;
+  }
 }
 @media (max-width: 321px) {
   .main-container .next-block .name,
