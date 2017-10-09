@@ -3594,6 +3594,9 @@ form .form-group .btn {
   }
 }
 @media (max-width: 650px) {
+  .main-slider .fixed-slider {
+    height: 96.8%;
+  }
   .abs-img {
     display: none!important;
   }
