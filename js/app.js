@@ -1013,8 +1013,6 @@ var lastAnimation = 0;
 function scrollInit(selector){
 	return new IScroll(selector, {
 			mouseWheel: true,
-			click: true,
-			tap: true,
 			scrollbars: true,
 			probeType: 3,
 			preventDefault: false,
