@@ -168,11 +168,11 @@ doc.ready(function(){
 		if ($('.iScrollIndicator').css('display') == "none"){
 			$('.scroll-control').hide();
 		}
-
+		$('.scroll-up').addClass('disabled');
 		doc.on('click', '.scroll-down', function(e){
 			if ($(this).hasClass('disabled')) return false 
 			e.preventDefault();
-			var val = -120;
+			var val = -220;
 			scrolled.scrollBy(0, val, 250, IScroll.utils.ease.quadratic)
 			// $('.scrolled-content').mCustomScrollbar("scrollTo", "-="+val, {
 			// 	scrollInertia:600
@@ -180,9 +180,10 @@ doc.ready(function(){
 		});
 		$('.scroll-down').mousedown(function(){
 			if ($(this).hasClass('disabled')) return false
-			var val = -120;
+			var val = -220;
 			function down(){
 				scrolled.scrollBy(0, val)
+				scrolled.refresh();
 			}
 			down_int = setInterval(down, 100);
 		}).mouseup(function(){
@@ -192,14 +193,15 @@ doc.ready(function(){
 		doc.on('click', '.scroll-up', function(e){
 			if ($(this).hasClass('disabled')) return false		
 			e.preventDefault();
-			var val = 70;
+			var val = 220;
 			scrolled.scrollBy(0, val, 250, IScroll.utils.ease.quadratic)
 		});
 		$('.scroll-up').mousedown(function(){
 			if ($(this).hasClass('disabled')) return false			
-			var val = 70;
+			var val = 220;
 			function up(){
 				scrolled.scrollBy(0, val)
+				scrolled.refresh();
 			}
 			up_int = setInterval(up, 100);
 		}).mouseup(function(){
@@ -996,6 +998,14 @@ doc.ready(function(){
         }
     });
 
+    $('.form-group input, .form-group textarea').keyup(function(){
+		if (!$(this).val() == ''){
+			$(this).next().addClass('changed');
+		} else {
+			$(this).next().removeClass('changed');
+		}
+	});
+
 });
 
 var lastAnimation = 0;
@@ -1007,7 +1017,8 @@ function scrollInit(selector){
 			tap: true,
 			scrollbars: true,
 			probeType: 3,
-			preventDefault: false
+			preventDefault: false,
+			bounce: false
 		});
 }
 
@@ -1099,7 +1110,7 @@ $(document).bind('mousewheel DOMMouseScroll', function(event) {
 function init_scroll(event, delta) {
 	let deltaOfInterest = delta,
 		timeNow = new Date().getTime(),
-		quietPeriod = 250;
+		quietPeriod = 10;
 
 	if(timeNow - lastAnimation < quietPeriod + 1000) {
 		event.preventDefault();
@@ -1108,12 +1119,14 @@ function init_scroll(event, delta) {
    setTimeout(function(){
 		if (deltaOfInterest < 0) {
 			// если вниз просто нажимаем на кнопочку
-			$('.next-main-link.active').click();
+			if (!$('.next-main-link.active').hasClass('last')){
+				$('.next-main-link.active').click();
+			}
 	   	} else {
 	   		// а вот в верх придется немного изъебнуться. 
 	   		mainScrollUp();
 	   	}
-   }, 150)
+   }, 0)
 	lastAnimation = timeNow;
 }
 
@@ -1160,7 +1173,7 @@ function menuResize(){
 			var clone = $(this).clone().attr('data-id', id);
 			$(this).hide();
 			if (!$('.navbar-nav .dropdown').find('.nav-item[data-id="'+id+'"]').length){
-				clone.appendTo($('.navbar-nav .dropdown'));
+				clone.removeClass('visible').appendTo($('.navbar-nav .dropdown'));
 			}
 		} else {
 			if (container.find('.dropdown')){

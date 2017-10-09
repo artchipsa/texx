@@ -791,14 +791,34 @@ form .form-group textarea {
   position: relative;
   background-color: transparent;
 }
-form .form-group input.required + label,
-form .form-group select.required + label,
-form .form-group textarea.required + label {
+form .form-group input.required + label:after,
+form .form-group select.required + label:after,
+form .form-group textarea.required + label:after {
+  content: "*";
   position: absolute;
   top: -5px;
   left: -8px;
   color: #E5002E;
   font-size: 16px;
+}
+form .form-group input:focus + label,
+form .form-group select:focus + label,
+form .form-group textarea:focus + label {
+  top: -20px;
+  font-size: 12px;
+}
+form .form-group input + label,
+form .form-group select + label,
+form .form-group textarea + label {
+  position: absolute;
+  top: 5px;
+  transition: all .35s;
+}
+form .form-group input + label.changed,
+form .form-group select + label.changed,
+form .form-group textarea + label.changed {
+  top: -20px;
+  font-size: 12px;
 }
 form .form-group input.error,
 form .form-group select.error,
@@ -840,7 +860,6 @@ form .form-group textarea:focus :-moz-placeholder {
   opacity: 0;
 }
 form .form-group textarea {
-  margin-top: 60px;
   margin-bottom: 60px;
 }
 form .form-group .btn {
@@ -4046,10 +4065,13 @@ form .form-group .btn {
   .modal-container {
     width: 104%;
     overflow-y: scroll;
+    padding: 0px;
   }
   .modal-container .modal-content {
-    width: 96%;
+    width: 100%;
     height: auto;
+    padding: 3% 10%;
+    padding-right: 13%;
   }
   .modal-container .modal-content .slide-sidebar h2 {
     margin-bottom: 20px;
@@ -4174,7 +4196,17 @@ form .form-group .btn {
     width: 100%;
   }
   .main-content.inner .scrolled-content section h2 {
-    font-size: 32px;
+    font-size: 22px;
+    padding: 0px;
+  }
+  .main-content.inner .scrolled-content section.about {
+    margin-bottom: 40px;
+  }
+  .main-content.inner .scrolled-content section .dark-img {
+    margin-bottom: 32px;
+  }
+  .main-content.inner .scrolled-content section.about h2 {
+    margin-bottom: 32px;
   }
   .main-content.inner .navigation-bar .section-nav .back-link {
     vertical-align: top;
@@ -4231,5 +4263,8 @@ form .form-group .btn {
   }
   .slide-content .bottom-icon-links a span {
     font-size: 14px;
+  }
+  header .user {
+    width: 25%;
   }
 }

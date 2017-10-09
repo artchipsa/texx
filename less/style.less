@@ -799,12 +799,28 @@ form{
 			position: relative;
 			background-color: transparent;
 			&.required{
-				+ label {
+				+ label:after {
+					content: "*";
 					position: absolute;
 					top: -5px;
 					left: -8px;
 					color: @red;
 					font-size: 16px;
+				}
+			}
+			&:focus{
+				+ label{
+					top: -20px;
+					font-size: 12px;
+				}
+			}
+			+ label{
+				position: absolute;
+				top: 5px;
+				transition: all .35s;
+				&.changed{
+					top: -20px;
+					font-size: 12px;
 				}
 			}
 			&.error{
@@ -832,7 +848,6 @@ form{
 			}
 		}
 		textarea{
-			margin-top: 60px;
 			margin-bottom: 60px;
 		}
 		.btn{
@@ -4162,10 +4177,13 @@ form .form-group .btn{
 	.modal-container{
 		width: 104%;
 		overflow-y: scroll;
+		padding: 0px;
 	}
 	.modal-container .modal-content{
-		width: 96%;
+		width: 100%;
 		height: auto;
+	    padding: 3% 10%;
+   		padding-right: 13%;
 	}
 	.modal-container .modal-content .slide-sidebar h2{
 		margin-bottom: 20px;
@@ -4289,7 +4307,17 @@ form .form-group .btn{
 		width: 100%;
 	}
 	.main-content.inner .scrolled-content section h2{
-		font-size: 32px;
+		font-size: 22px;
+		padding: 0px;
+	}
+	.main-content.inner .scrolled-content section.about{
+		margin-bottom: 40px;
+	}
+	.main-content.inner .scrolled-content section .dark-img{
+		margin-bottom: 32px;
+	}
+	.main-content.inner .scrolled-content section.about h2{
+		margin-bottom: 32px;
 	}
 	.main-content.inner .navigation-bar .section-nav .back-link{
 		vertical-align: top;
@@ -4345,6 +4373,9 @@ form .form-group .btn{
 	}
 	.slide-content .bottom-icon-links a span{
 		font-size: 14px;
+	}
+	header .user{
+		width: 25%;
 	}
 }
 
