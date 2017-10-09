@@ -576,6 +576,7 @@ header .user img:last-child {
   font-weight: 600;
   line-height: 100%;
   transition: all .35s;
+  transform-origin: 50% 48%;
 }
 .fullscreen .slide-sidebar .bottom-link .more {
   display: inline-block;
@@ -707,6 +708,7 @@ header .user img:last-child {
   color: #2F2F2F;
   font-size: 20px;
   font-weight: 800;
+  border-radius: 0px;
   padding-bottom: 20px;
 }
 .fullscreen .slide-content form .form-group input:focus,
@@ -3205,8 +3207,17 @@ form .form-group .btn {
   .select2-search--dropdown {
     padding: 0px;
   }
+  .fullscreen .slide-content .fixed-slider-arrow .arrow:hover {
+    background-color: #2F2F2F;
+  }
+  .fullscreen .slide-content .fixed-slider-arrow .arrow:hover svg {
+    fill: #FFF;
+  }
 }
 @media (max-width: 991px) {
+  .fullscreen .slide-sidebar .bottom-link:hover .circle {
+    margin-right: 8px;
+  }
   .double-list-section .item {
     width: 100%;
     margin-bottom: 40px;
