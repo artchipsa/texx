@@ -3605,9 +3605,24 @@ form .form-group .btn {
   }
 }
 @media (max-width: 650px) {
+  .select2-container--default .select2-selection--single {
+    height: 34px;
+  }
   .main-slider .fixed-slider {
     height: 100%;
     padding-bottom: 20%;
+  }
+  .fullscreen .slide-content form .form-group input,
+  .fullscreen .slide-content form .form-group select {
+    padding-left: 0px;
+    padding-bottom: 7px;
+    font-size: 14px;
+  }
+  .fullscreen .slide-content form .form-group {
+    margin-bottom: 12px;
+  }
+  .select2-container--default .select2-selection--single {
+    font-size: 14px;
   }
   .abs-img {
     display: none!important;
