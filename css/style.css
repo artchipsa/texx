@@ -4388,6 +4388,12 @@ form .form-group .btn {
     transform-box: fill-box;
     transform: scale(1.25);
   }
+  .main-content.inner .scrolled-content section img {
+    margin-bottom: 0px;
+  }
+  .logos-block .item {
+    margin-bottom: 44px;
+  }
 }
 @media (max-width: 321px) {
   .main-container .next-block .name,
