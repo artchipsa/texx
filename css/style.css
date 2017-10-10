@@ -2008,11 +2008,11 @@ section.article-wrapper .fullhalf-block h1 {
   min-height: 100%;
 }
 .main-content.inner .scrolled-content {
-  padding: 5.5% 0%;
+  padding: 3.5% 0%;
 }
 .scrolled.fullwidth {
   width: 100%!important;
-  height: 87%;
+  height: 87%!important;
   position: absolute!important;
   bottom: 0px;
   overflow: hidden;
@@ -4268,6 +4268,68 @@ form .form-group .btn {
   }
   .contacts-col {
     width: 75%;
+  }
+  .mobile-scroll {
+    padding: 5px 0px;
+  }
+  .main-content.inner.wider section p,
+  .main-content.inner.wider section h2,
+  .main-content.inner.wider section h3 {
+    padding-left: 1%;
+  }
+  .main-content.inner {
+    height: 90.9%;
+  }
+  .main-content.inner .scrolled-content section h2 {
+    margin-bottom: 30px;
+  }
+  .red-slider .item .big-numbers {
+    margin-bottom: 30px;
+  }
+  .red-slider .item .big-numbers {
+    font-size: 110px;
+  }
+  .three-block {
+    width: 100%;
+  }
+  .three-block .item {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .logos-block {
+    width: 100%;
+  }
+  .logos-block .item {
+    width: 100%;
+    text-align: center;
+  }
+  .main-content.inner .scrolled-content section img {
+    width: 70%;
+  }
+  .main-content.inner .scrolled-content {
+    padding: 0px;
+  }
+  .scrolled.fullwidth .equipment-block {
+    padding: 0px!important;
+  }
+  .scrolled.fullwidth .equipment-block .item {
+    margin-right: 24px;
+  }
+  .scrolled.fullwidth .equipment-block .item img {
+    max-height: 200px;
+  }
+  .scrolled.fullwidth .equipment-block .item span {
+    margin-top: 20px;
+  }
+  header {
+    padding: 3% 1%;
+    padding-bottom: 0px;
+  }
+  .main-content.inner .navigation-bar {
+    padding: 3% 4%;
+  }
+  .btn {
+    padding: 8px 16px;
   }
 }
 @media (max-width: 321px) {

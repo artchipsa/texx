@@ -124,7 +124,7 @@ doc.ready(function(){
 				if ($('.feedback').length){
 					setTimeout(function(){
 						$('.main-content, .feedback').removeClass('scrolled_down');
-					}, 100)
+					}, 0)
 				}
 			}
 		})
@@ -137,13 +137,13 @@ doc.ready(function(){
 				if ($('.feedback').length){
 					setTimeout(function(){
 						$('.main-content, .feedback').addClass('scrolled_down');
-					},100)
+					},0)
 				}
 			} else {
 				if ($('.feedback').length){
 					setTimeout(function(){
 						$('.main-content, .feedback').removeClass('scrolled_down');
-					}, 300)
+					}, 100)
 				}
 			}
 
@@ -1028,7 +1028,7 @@ function mobileScroll(){
 		var stop_parametre = 0;
 		elems.each(function(){
 			width = width + $(this).outerWidth(true)+10;
-			stop_parametre = stop_parametre + ($(this).outerWidth(true)+10);
+			stop_parametre = stop_parametre + ($(this).outerWidth(true));
 		});
 
 		$(this).width(width);
