@@ -97,7 +97,7 @@ doc.ready(function(){
 			scrolled.refresh();
 		})
 
-		$('.tabs li').click(function(){
+		$('.tabs li, .switcher-tabs li').click(function(){
 			scrolled.destroy();
 
 			setTimeout(function(){
@@ -534,13 +534,13 @@ doc.ready(function(){
 
 			chart = new Highcharts.chart(options);
 
-			$('#run_economy').text(addCommas(run)+" руб./мес.");
-			$('#sell_economy').text(addCommas(sell)+" руб./мес.");
-			$('#opti_economy').text(addCommas(perOne)+" руб./мес.");
-			$('#all_economy').text(addCommas(all)+" руб./мес.");
-			$('#once_budget').text(addCommas(once_budget) + " руб.");
-			$('#every_month_budget').text(addCommas(month) + " руб./мес.");
-			$('#payback').text(addCommas(payback) + " мес.");
+			$('#run_economy').text(addCommas(parseInt(run))+" руб./мес.");
+			$('#sell_economy').text(addCommas(parseInt(sell))+" руб./мес.");
+			$('#opti_economy').text(addCommas(parseInt(perOne))+" руб./мес.");
+			$('#all_economy').text(addCommas(parseInt(all))+" руб./мес.");
+			$('#once_budget').text(addCommas(parseInt(once_budget)) + " руб.");
+			$('#every_month_budget').text(addCommas(parseInt(month)) + " руб./мес.");
+			$('#payback').text(addCommas(parseInt(payback)) + " мес.");
 
 		}
 	}
@@ -724,11 +724,7 @@ doc.ready(function(){
 		}, 350)
 	});
 
-
-
-
 	// cost
-
 
 	var light_cost = {
 		selfcost: 0,
