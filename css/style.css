@@ -826,6 +826,7 @@ form .form-group textarea + label {
   position: absolute;
   top: 5px;
   transition: all .35s;
+  pointer-events: none;
 }
 form .form-group input + label.changed,
 form .form-group select + label.changed,
@@ -888,6 +889,20 @@ form .form-group .btn:focus {
   background-color: #fff;
   border-color: #E5002E;
   outline: none;
+}
+.select2-container + label {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  transition: all .35s;
+  pointer-events: none;
+}
+.select2-container + label.changed {
+  top: -22px;
+  font-size: 12px;
+}
+.select2-container--default .select2-selection--single {
+  border-bottom: 0px!important;
 }
 .contacts-block {
   width: 90%;

@@ -129,8 +129,15 @@ doc.ready(function(){
 			}
 		})
 		scrolled.on('scroll', function(){
-			$('.scroll-up').removeClass('disabled');
-			$('.scroll-down').removeClass('disabled');
+			// $('.scroll-up').removeClass('disabled');
+			// $('.scroll-down').removeClass('disabled');
+			if (this.y == 0){
+				$('.scroll-up').addClass('disabled');
+				$('.scroll-down').removeClass('disabled');
+			} else {
+				$('.scroll-up').removeClass('disabled');
+				$('.scroll-down').removeClass('disabled');
+			}
 			if (this.y == this.maxScrollY){
 				$('.scroll-down').addClass('disabled');
 				$('.scroll-up').removeClass('disabled');
@@ -191,13 +198,13 @@ doc.ready(function(){
 		});
 
 		doc.on('click', '.scroll-up', function(e){
-			if ($(this).hasClass('disabled')) return false		
+			if ($(this).hasClass('disabled') || scrolled.y > 0) return false		
 			e.preventDefault();
 			var val = 220;
 			scrolled.scrollBy(0, val, 250, IScroll.utils.ease.quadratic)
 		});
 		$('.scroll-up').mousedown(function(){
-			if ($(this).hasClass('disabled')) return false			
+			if ($(this).hasClass('disabled') || scrolled.y > 0) return false			
 			var val = 220;
 			function up(){
 				scrolled.scrollBy(0, val)

@@ -831,6 +831,7 @@ form{
 				position: absolute;
 				top: 5px;
 				transition: all .35s;
+				pointer-events: none;
 				&.changed{
 					top: -20px;
 					font-size: 12px;
@@ -877,6 +878,22 @@ form{
 			}
 		}
 	}
+}
+.select2-container{
+	+ label{
+		position: absolute;
+		top: 5px;
+		left: 0px;
+		transition: all .35s;
+		pointer-events: none;
+		&.changed{
+			top: -22px;
+			font-size: 12px;
+		}
+	}
+}
+.select2-container--default .select2-selection--single{
+	border-bottom: 0px!important;
 }
 .contacts-block{
 	width: 90%;
