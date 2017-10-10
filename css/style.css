@@ -2941,7 +2941,7 @@ form .form-group .btn {
     padding: 2% 6%;
   }
   form .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   form .cost-block label {
     font-size: 14px;
@@ -2951,6 +2951,31 @@ form .form-group .btn {
   }
   .fullscreen .content .section-container {
     width: 89%;
+  }
+  form .form-group input,
+  form .form-group select,
+  form .form-group textarea {
+    padding-bottom: 5px;
+  }
+  form .form-group input + label,
+  form .form-group select + label,
+  form .form-group textarea + label {
+    top: 8px;
+  }
+  form .form-group input + label.changed,
+  form .form-group select + label.changed,
+  form .form-group textarea + label.changed {
+    top: -15px;
+  }
+  form .form-group input:focus + label,
+  form .form-group select:focus + label,
+  form .form-group textarea:focus + label {
+    top: -15px;
+  }
+  form .form-group input,
+  form .form-group select,
+  form .form-group textarea {
+    font-size: 18px;
   }
 }
 @media (max-width: 1025px) {
@@ -4409,5 +4434,14 @@ form .form-group .btn {
   }
   header .user {
     width: 25%;
+  }
+  .main-slider .abs-container .content .center-bottom-text h2 {
+    margin: 0px;
+  }
+  .main-slider .abs-container .content .center-bottom-text {
+    bottom: 25px;
+  }
+  .main-slider .fixed-slider-counter {
+    bottom: 27%;
   }
 }
