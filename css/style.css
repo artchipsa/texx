@@ -4355,12 +4355,13 @@ form .form-group .btn {
     margin-top: 30px;
   }
   .tab-pane .fullwidth .car-block svg .point.active {
-    transform: scale(1.25);
+    transform: scale(1.55);
   }
   .tab-pane .fullwidth .car-block svg .point {
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     transform-box: fill-box;
+    transform: scale(1.25);
   }
 }
 @media (max-width: 321px) {
