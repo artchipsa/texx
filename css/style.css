@@ -4444,4 +4444,7 @@ form .form-group .btn {
   .main-slider .fixed-slider-counter {
     bottom: 27%;
   }
+  .main-slider .abs-container .content .left-top-text {
+    font-size: 14px;
+  }
 }
