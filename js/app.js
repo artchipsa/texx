@@ -1033,15 +1033,15 @@ doc.ready(function(){
 			$('.section-container input').focus(function(){
 				$(this).parents('.fullscreen').find('.next-block').hide();
 				$(this).parents('.content').addClass('focused');
-				$('.main-content.active').css('height', '82%')
-				$('.main-container').css('height', '108.3%')
+				/*$('.main-content.active').css('height', '82%')
+				$('.main-container').css('height', '108.3%')*/
 			})
 
 			$('.section-container input').blur(function(){
 				$(this).parents('.fullscreen').find('.next-block').show();
 				$(this).parents('.content').removeClass('focused');
-				$('.main-content.active').css('height', '90%')
-				$('.main-container').css('height', '100%')
+				/*$('.main-content.active').css('height', '90%')
+				$('.main-container').css('height', '100%')*/
 			})
 		}
 	}
