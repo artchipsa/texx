@@ -1026,25 +1026,20 @@ doc.ready(function(){
 	});
 
     // костыль для андроидской клавы
+    var ua = navigator.userAgent.toLowerCase();
+	var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+	if(isAndroid) {
+		if ($(window).width() < 651){
+			$('.section-container input').focus(function(){
+				$(this).parents('.fullscreen').find('.next-block').hide();
+				$(this).parents('.content').addClass('focused');
+			})
 
-	if ($(window).width() < 651){
-		$('.section-container input').focus(function(){
-			$(this).parents('form').css({
-				height: '112px',
-				overflow: 'scroll'
-			});
-			$('.fullscreen .slide-content.flex-column').css('display', 'block');
-			$(this).parents('.fullscreen').find('.next-block').hide();
-		})
-
-		$('.section-container input').blur(function(){
-			$(this).parents('form').css({
-				height: 'auto',
-				overflow: 'auto'
-			});
-			$('.fullscreen .slide-content.flex-column').css('display', 'flex');
-			$(this).parents('.fullscreen').find('.next-block').show();
-		})
+			$('.section-container input').blur(function(){
+				$(this).parents('.fullscreen').find('.next-block').show();
+				$(this).parents('.content').removeClass('focused');
+			})
+		}
 	}
 
 });

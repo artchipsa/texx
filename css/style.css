@@ -4421,6 +4421,10 @@ form .form-group .btn {
     height: 90.9%;
     bottom: 0px;
   }
+  .fullscreen .content.focused {
+    overflow: scroll;
+    height: 100%;
+  }
 }
 @media (max-width: 321px) {
   .slide-content .article-wrapper .small-block .time {
