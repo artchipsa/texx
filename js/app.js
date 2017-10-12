@@ -1137,6 +1137,25 @@ function partner_map_size(){
 	$('.map_g').attr('transform', 'scale('+scale+')');
 }
 
+
+
+
+
+
+
+
+if ($(window).width() < 1030){
+	if ($('#mainpage').length){
+		$(document).hammer().bind('pan', function(event){
+			let delta = event.gesture.deltaY;
+			if (event.gesture.additionalEvent == 'panup' || event.gesture.additionalEvent == 'pandown'){
+				init_scroll(event, delta);
+			}
+		})
+	}
+}
+
+
 // Логика листания на колесико мышки
 $(document).bind('mousewheel DOMMouseScroll', function(event) {
 	let delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
@@ -1145,6 +1164,7 @@ $(document).bind('mousewheel DOMMouseScroll', function(event) {
 		init_scroll(event, delta);
 	}
 });
+
 function init_scroll(event, delta) {
 	let deltaOfInterest = delta,
 		timeNow = new Date().getTime(),
@@ -1154,7 +1174,7 @@ function init_scroll(event, delta) {
 		event.preventDefault();
 	    return;
 	}
-   setTimeout(function(){
+   	setTimeout(function(){
 		if (deltaOfInterest < 0) {
 			// если вниз просто нажимаем на кнопочку
 			if (!$('.next-main-link.active').hasClass('last')){
@@ -1164,7 +1184,7 @@ function init_scroll(event, delta) {
 	   		// а вот в верх придется немного изъебнуться. 
 	   		mainScrollUp();
 	   	}
-   }, 0)
+   	}, 0)
 	lastAnimation = timeNow;
 }
 
