@@ -1143,7 +1143,7 @@ function partner_map_size(){
 
 
 
-
+// тач листание на главной
 if ($(window).width() < 1030){
 	if ($('#mainpage').length){
 		$(document).hammer().bind('pan', function(event){
@@ -1154,7 +1154,6 @@ if ($(window).width() < 1030){
 		})
 	}
 }
-
 
 // Логика листания на колесико мышки
 $(document).bind('mousewheel DOMMouseScroll', function(event) {

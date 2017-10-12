@@ -825,6 +825,7 @@ form .form-group select + label,
 form .form-group textarea + label {
   position: absolute;
   top: 5px;
+  left: 0px;
   transition: all .35s;
   pointer-events: none;
 }
@@ -4494,5 +4495,12 @@ form .form-group .btn {
   }
   .main-slider .abs-container .content .left-top-text {
     font-size: 14px;
+  }
+  .fullscreen .slide-content form .form-group {
+    margin-bottom: 10px;
+  }
+  .select2-container--default .select2-selection--single {
+    height: 24px;
+    padding-bottom: 0px;
   }
 }
