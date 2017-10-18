@@ -222,6 +222,9 @@ header .user img:last-child {
 .owl-carousel {
   height: 100%;
 }
+.owl-carousel.no-dots .owl-dots {
+  display: none;
+}
 .owl-stage-outer,
 .owl-stage,
 .owl-item {

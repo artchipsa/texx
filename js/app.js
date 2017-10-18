@@ -20,18 +20,20 @@ doc.ready(function(){
 				} else {
 					length = e.item.count;
 				}
-				if (e.item.index+1 < 10){
-					current = '0'+parseInt(e.item.index+1);
+				console.log(e.page.index);
+				if (e.page.index+1 < 10){
+					current = '0'+parseInt(e.page.index+2);
 				} else {
-					current = e.item.index+1;
+					current = e.page.index+2;
 				}
 				sliderUpdate($(this), length, current);
 			})
 
 			$(this).owlCarousel({
 				margin: 0,
+				loop: true,
 				items: 1,
-				dots: false
+				rewind: false
 			});
 
 			$(this).on('translated.owl.carousel', function(e){
@@ -42,10 +44,10 @@ doc.ready(function(){
 				} else {
 					length = e.item.count;
 				}
-				if (e.item.index+1 < 10){
-					current = '0'+parseInt(e.item.index+1);
+				if (e.page.index+1 < 10){
+					current = '0'+parseInt(e.page.index+1);
 				} else {
-					current = e.item.index+1;
+					current = e.page.index+1;
 				}
 
 /*				if (e.item.index == e.item.count-1){
@@ -176,7 +178,7 @@ doc.ready(function(){
 		}
 		$('.scroll-up').addClass('disabled');
 		doc.on('click', '.scroll-down', function(e){
-			if ($(this).hasClass('disabled')) return false 
+			if ($(this).hasClass('disabled') || scrolled.y == scrolled.maxScrollY) return false 
 			e.preventDefault();
 			var val = -220;
 			scrolled.scrollBy(0, val, 250, IScroll.utils.ease.quadratic)
@@ -186,7 +188,8 @@ doc.ready(function(){
 		});
 
 		$('.scroll-down').mousedown(function(){
-			if ($(this).hasClass('disabled')) return false
+			if ($(this).hasClass('disabled') || scrolled.y == scrolled.maxScrollY) return false
+			console.log(scrolled);
 			var val = -220;
 			function down(){
 				scrolled.scrollBy(0, val)
