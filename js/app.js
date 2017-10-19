@@ -720,6 +720,7 @@ doc.ready(function(){
 	})
 
 	$('.close-modal').click(function(){
+		$('.modal-container').find('form input[type="text"]').val('');
 		$('.modal-container').fadeOut(300);
 	});
 
